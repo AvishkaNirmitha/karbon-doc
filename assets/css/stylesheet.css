@@ -3229,3 +3229,15 @@ input:-internal-autofill-selected {
 .logo-custom {
   width: 50px;
 }
+
+.text_L{
+  
+      font-size: 21px;
+}
+.text_m{
+  
+  font-size: 18px;
+}
+.text_color{
+  color: #e80000
+}
