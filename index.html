@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Karbon User Guide</title>
+<meta name="description" content="Your ThemeForest item Name and description">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+	        <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template">
+            <img
+              src="assets/images/logo.png"
+              class="logo-custom"
+              alt="iDocs Template"
+            />
+          </a>
+          <span class="ml-2 mr-auto text-2">Karbon v2.0</span>
+          <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button> -->
+        
+		<!-- <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Another Action</a>
+                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+              </ul>
+            </li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </div> -->
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Introduction</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_installation">1.1.Purpose</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">1.2.What is Trading</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_sass">1.3.What is a Candlestick</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">1.4.What is a Candle Indicator</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">1.5.How to Use Indicator</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">1.6.How does Trading Work</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_layout">User Types & Sign Up</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#idocs_header">User Type</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">Sign Up</a></li>
+			<!-- <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li> -->
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_content">Home</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_typography">Welcome Message & Links</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_code">Color Theme Changing</a></li>
+       <!--      <li class="nav-item"><a class="nav-link" href="#idocs_table">Table</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li> -->
+          </ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_components">Live/Paper Accounts</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Create ByBit New Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_tabs">How To enable 2FA authentication.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">How to Create Sub Account on bybit</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Create Your API Key on Bybit Subaccount</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_Funding">How to Add funds to sub account</a></li>
+          
+          </ul>
+        </li>
+
+       
+		<li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_templates">More Templates</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+       
+        
+        <section id="idocs_start">
+          <h1>Introduction</h1>
+          <!-- <h2>Your ThemeForest Item Name Here</h2>
+          <p class="lead">
+            Thank you so much for purchasing our item from themeforest.
+          </p>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <ul class="list-unstyled">
+                <li><strong>Version:</strong> 1.0</li>
+                <li>
+                  <strong>Author:</strong>
+                  <a href="http://www.harnishdesign.net" target="_blank"
+                    >Harnish Design</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <ul class="list-unstyled">
+                <li>
+                  <strong class="font-weight-700">Created:</strong> 8 April,
+                  2020
+                </li>
+                <li><strong>Update:</strong> 12 May, 2020</li>
+              </ul>
+            </div>
+          </div>
+          <p class="alert alert-info">
+            If you have any questions that are beyond the scope of this help
+            file, Please feel free to email via
+            <a
+              target="_blank"
+              href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign"
+              >Item Support Page</a
+            >.
+          </p> -->
+        </section>
+
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+        <section id="idocs_installation">
+          <h3>1.1.Purpose</h3>
+          <p>
+            This platform facilitates effortless trading by allowing users
+            to establish personalized settings, thereby enabling trades to
+            be executed automatically and requiring minimal human
+            intervention. This platform could potentially assist in closing
+            trades automatically when they reach a profitable point. This
+            streamlined approach ensures a user-friendly experience that
+            stands out from traditional trading platforms
+          </p>    
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure
+		============================ -->
+        <section id="idocs_html_structure">
+          <h3>1.2.What is Trading</h3>
+          <p>
+            Trading is the buying and selling of financial instruments in
+            order to make a profit. These instruments range from a variety
+            of assets assigned a financial value that can go up or down.
+            Trading involves vigorous participation in the financial markets
+            compared to investing, which works on a buy-and-hold strategy.
+            The success of trading is dependent on the ability of a trader
+            to be profitable over a period of time.
+          </p>
+          <p>
+            A trader is a person who gets involved in buying and selling a
+            financial asset in any financial market. He or she can buy or
+            sell either for himself/herself or on behalf of another
+            individual or institution. The main difference between an
+            investor and a trader is the duration for which he or she holds
+            on to the asset.
+          </p>
+          <p>
+            A trader is a person who engages in the short-term purchasing
+            and selling of equity either for an institution or for
+            themselves.
+          </p>        </section>
+        
+		<hr class="divider">
+		        
+		<!-- Sass
+		============================ -->
+        <section id="idocs_sass">
+          <h3>1.3.What is a Candlestick</h3>
+          <p>
+            A candle stick is a type of price chart used in technical
+            analysis that displays the high, low, open, and closing prices
+            of a security for a specific period.
+          </p>
+          <p>
+            wherein each candlestick details a single day’s trading. It has
+            three essential features:
+          </p>
+
+          <ul>
+            <li>The body, which represents the open-to-close range</li>
+            <li>
+              The wick, or shadow, that indicates the intra-day high and low
+            </li>
+            <li>
+              The color, which reveals the direction of market movement – a
+              green (or white) body indicates a price increase, while a red
+              (or black) body shows a price decrease
+            </li>
+          </ul>
+
+          <p id="">
+            Over time, individual candlesticks form patterns that traders
+            can use to recognize major support and resistance levels. There
+            are a great many candlestick patterns that indicate an
+            opportunity within a market – some provide insight into the
+            balance between buying and selling pressures, while others
+            identify continuation patterns or market indecision.
+            CandlePatternsAll strategy calculates all candlestick pattern
+            indicators that are available on the platform. Essentially, the
+            strategy differs from the CandlePatternsMultiple strategy only
+            by calculated indicator count and by the way the list of
+            indicators gets compiled.
+          </p>
+
+          <p>
+            This real body represents the price range between the open and
+            close of that day's trading. When the real body is filled in or
+            black (also red), it means the close was lower than the open. If
+            the real body is white (or green), the close was higher than the
+            open.
+          </p>
+
+          <img
+            src="assets/images/doc-images/1-3-candlestick.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+          />        </section>
+        
+		<hr class="divider">
+		
+		<!-- Color Schemes
+		============================ -->
+        <section id="idocs_color_schemes">
+          <h3>1.4.What is a Candle Indicator</h3>
+
+          <p>
+            This indicator paints each candle green, red, or blue depending
+            on whether the buy/sell pressure for that candle is bullish,
+            bearish, or neutral.
+          </p>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Customization
+		============================ -->
+        <section id="idocs_theme_customization">
+          <h3>1.5.How to Use Indicator</h3>
+
+          <p>
+            When the directional movement index indicator shows more buying
+            pressure than selling pressure, the candle will appear lime
+            green. This indicates bullish buying pressure. When the
+            directional movement index indicator shows more selling pressure
+            than buying pressure, the candle will appear red. This indicates
+            bearish selling pressure. When the directional movement index
+            indicator shows the same amount of buy and sell pressure, the
+            candle will appear blue. This indicates neutral buy/sell
+            pressure. 8 Use the color changes to see if there is more buying
+            or selling to pinpoint reversals and understand current market
+            buying. Wait to enter or exit positions until the candles turn
+            the opposite color.
+          </p>
+
+          <img
+            src="assets/images/doc-images/1-5-chart.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+          />
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Logo Settings
+		============================ -->
+        <section id="idocs_logo_settings">
+          <h3>1.6.How does Trading Work</h3>
+
+              <p>
+                When trading, the user profit if the market price moves in the
+                same direction as the user’s speculation; however, if it takes
+                the opposite direction, the user incur a loss. It’s important to
+                note that trading is inherently risky and could lose more than
+                expected if don’t take the appropriate risk management steps.
+                Trading happens between two parties and often involves a dealer
+                network. No central, physical location only a virtual network of
+                participants. Timings 24/7. Contracts are Customized.
+                Counterparty risk, assets can be more volatile, and can be
+                traded on leverage, which means there’s a risk of losing more
+                than the deposit
+              </p>
+        </section>
+		
+        
+		<hr class="divider">
+		
+		<!-- Layout
+		============================ -->
+        <section id="idocs_layout">
+          <h2>User Types And Sign Up</h2>
+          <p class="lead mb-5">Documentation about user Types and Sign Up to the Karbon</p>
+        </section>
+		
+		
+        <!-- Header
+		============================ -->
+        <section id="idocs_header">
+         <table>
+            <tr>
+              <th>User Type</th>
+              <th>description</th>
+            </tr>
+            <tr>
+              <td>Default User</td>
+              <td>Default user is created After the signing up process</td>
+            </tr>
+            <tr>
+              <td>Admin User</td>
+              <td>Responsible for implementing and maintaining security services, such
+                as adding users, building profiles, or managing general site
+                administration
+                </td>
+            </tr>
+            <tr>
+              <td>Lab User</td>
+              <td>This is another existing user type. able to add strategies to the system
+                </td>
+            </tr>
+            <tr>
+              <td>Elite User</td>
+              <td>Auto execution subscribe and account balance 1000USDT</td>
+            </tr>
+            <tr>
+              <td>Pro User</td>
+              <td>Not defined yet</td>
+            </tr>
+            <tr>
+              <td>Pro + User</td>
+              <td>Not defined yet</td>
+            </tr>
+                
+         </table>
+         <br>
+         <img
+            src="assets/images/doc-images/UserTypes.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+          />
+        </section>
+
+		<hr class="divider">
+		
+		<!-- Navbar
+		============================ -->
+        <section id="idocs_navbar">
+          <h2>Sign Up</h2>
+		  <p class="lead">To use this platform user needs to create an account by simply providing their Name, Email,
+        and password</p>
+        <img
+            src="assets/images/doc-images/SighUp.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+          />
+		 
+          <p>After creating an account on Karbon, users are able to connect their online exchanges with
+            their new Karbon account. Before connecting exchanges, the user needs to create an
+            account on the exchange platform. exchange platforms are bitget and bybit
+            Bybit and Bitget are online exchanges where users can trade cryptocurrencies
+            we are planing to add binance exchange near future</p>
+            <img
+            src="assets/images/doc-images/Exchangers .png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+          />
+        </section>
+		
+		<hr class="divider">
+		
+
+		
+		<!-- Home
+		============================ -->
+        <section id="idocs_content">
+          <h2>Home</h2>
+          <p class="lead mb-5">Brief introduction to Karbon UI </p>
+        </section>
+		  
+		<!-- Welcome Message & Links
+		============================ -->
+		<section id="idocs_typography">
+		  <h2>Welcome Message & Links</h2>
+      <img
+      src="assets/images/doc-images/HomePage.png"
+      class="img-fluid mt-4 mb-3"
+      alt="Responsive image"
+      />
+      <img
+      src="assets/images/doc-images/HomePage2.png"
+      class="img-fluid mt-4 mb-3"
+      alt="Responsive image"
+      />
+  
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Color Theme Changing
+		============================ -->
+		<section id="idocs_code">
+		  <h2>Color Theme Changing</h2>
+		  <p class="text-4">Site theme can be changed according to the user’s desire. Blue and Green colors are
+        available.</p>
+      <img
+      src="assets/images/doc-images/ColorChange.png"
+      class="img-fluid mt-4 mb-3"
+      alt="Responsive image"
+      />
+      
+		</section>
+		
+		<hr class="divider">
+		
+		  
+		
+        <!-- Components
+		============================ -->
+        <section id="idocs_components">
+          <h2>Live/Paper Accounts</h2>
+          <img
+          src="assets/images/doc-images/LivePaperAcc.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+      
+        </section>
+		  
+		  <!-- Accordion
+		  ============================ -->
+		  <section id="idocs_accordion">
+            <h2>Create ByBit New Account</h2>
+			<p> click <a href="https://www.bybit.com/en/">here</a> to open bybit</p>
+          <p>There are two ways to create a Bybit account:
+          <li>Sign up by email</li>
+          <li>Sign up by phone number</li>
+          <br>Click Sign in on the top right corner of the Bybit homepage. Then click Sign up. You can choose to sign up by email or phone number. Fill in the required information and click Sign up. You will receive a verification code in your email or phone number. Enter the verification code to complete the sign-up process.</p>
+          </p>
+          <img
+          src="assets/images/doc-images/SighUpBybit.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+          <p>Make sure you have understood and agreed to the terms and privacy policy, and after
+            checking that the information entered is correct, click on Create Account on your desktop or
+            Continue on your mobile.</p>
+          </section>
+          
+		  <hr class="divider">
+		  
+		  <!-- How To enable 2FA authentication.
+		  ============================ -->
+		  <section id="idocs_tabs">
+            <h2>How To enable 2FA authentication</h2>
+            <p>Click your Bybit Profile icon and go to account and security page</p>  
+            <img
+            src="assets/images/doc-images/2fa1.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+		    	<p>In account and security scroll down the page to advance protection.</p>
+		    	<p>Click settings related to google two factor authentication.</p>
+          <img
+          src="assets/images/doc-images/2fa2.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+          <p>Check your email to verification code and enter that code to security
+            verification.</p>
+            <p>downloads google authentication app and scan the QR code given in the
+              popup window and enter the authentication code in given field in the popup
+              window.
+              </p>
+              <p>Click confirm to finish the setup</p> 
+              <img
+              src="assets/images/doc-images/finish.png"
+               class="img-fluid mt-4 mb-3"
+                alt="Responsive image"
+             />
+          </section>
+          
+		  <hr class="divider">
+		  		  
+          <!-- How to Create Sub Account on bybit
+		  ============================ -->
+		  <section id="idocs_social_icon">
+            <h3>How to Create Sub Account on bybit</h3>
+            <p>Go to user setting by clicking profile icon in bybit.</p>
+            <p>Click subaccounts tab</p>
+            <p>Click Create subaccount button.</p>
+            <img
+              src="assets/images/doc-images/subacc1.png"
+               class="img-fluid mt-4 mb-3"
+                alt="Responsive image"
+             />
+             <p>Click standard subaccount.</p>
+             <img
+             src="assets/images/doc-images/subacc2.png"
+              class="img-fluid mt-4 mb-3"
+               alt="Responsive image"
+            />
+            <p>Enter any name without space and select account type to standard</p>
+            <img
+            src="assets/images/doc-images/subacc3.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+           <p>Click confirm to finish the setup.</p>
+            
+          </section>
+		  
+		  <hr class="divider">
+		  
+		  <!-- Create Your API Key on Bybit Subaccount
+		  ============================ -->
+          <section id="idocs_helper_classes">
+            <h3>Create Your API Key on Bybit Subaccount</h3>
+            <p>enter your account's settings page. Perform a login if prompted. Alternatively, you
+              can click the human icon on the top right corner of your trading page, go to “Subaccounts”
+              then click “Management “in created sub account </p>
+              <img
+              src="assets/images/doc-images/APIImg1.png"
+               class="img-fluid mt-4 mb-3"
+                alt="Responsive image"
+              />
+              <p>Click on 'Create New Key' located on the right side of the 'API Management' page</p>
+             
+            <p>Click system-generated API keys.</p>
+            <img
+            src="assets/images/doc-images/ApiImg3.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+            
+            <p>The following pop-out window will appear. Please configure your API key according
+              to your trading needs.</p>
+              <img
+            src="assets/images/doc-images/ApiImg2.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+            <p> Enter 2FA code and confirm. You have successfully created your API key!</p>
+            <h4>“Users can add the IP address that was provided by the Karbon team to the API creation process to
+              prevent other unauthorized IP addresses.”</h4>
+
+			    </section>
+        
+        
+		<hr class="divider">
+		
+     <!-- Helper Classes
+		  ============================ -->
+      <section id="idocs_Funding">
+        <h3>How to Add funds to sub account</h3>
+        <li>Go to assets using navigation bar.</li>
+        <li>In asset overview Click Transfer button</li>
+        <img
+            src="assets/images/doc-images/fun1.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+        <li>After clicking transfer you can see a popup window named transfer.</li>
+        <li>Select across sub account(s)(no1)</li>
+        <li>set your main account for “from” field, for “To” fields select user sub account derivative
+          account. (no2)</li>
+        <li>Select coin to USDT and set amount you need to transfer.</li>
+        <li>• Click confirm to transfer funds</li>
+        <img
+            src="assets/images/doc-images/Fund2.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+       
+
+              
+      </section>
+    
+    
+<hr class="divider">
+		<!-- FAQ
+		============================ -->
+		<section id="idocs_faq">
+          <h2>FAQ</h2>
+          <p class="text-4">A FAQ is a list of frequently asked questions (FAQs) and answers on a particular topic.</p>
+          
+		  <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
+                </div>
+                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                  <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end products?</a> </h5>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
+                  <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">I'm not sure if my use is covered. What should I do?</a> </h5>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
+                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading5">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What is a single application?</a> </h5>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
+                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">Am I allowed to modify the item that I purchased?</a> </h5>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Ad vegan excepteur butcher vice lomo. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </section>
+        
+		<hr class="divider">
+        
+        <!-- Source & Credits
+		============================ -->
+        <section id="idocs_source_credits">
+          <h2>Source & Credits</h2>
+          <h4>Images:</h4>
+          <ul>
+            <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a></li>
+          </ul>
+		  <h4>Fonts:</h4>
+          <ul>
+            <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+          </ul>
+          <h4>Scripts:</h4>
+          <ul>
+            <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+            <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+			<li>Highlight Js - <a target="_blank" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+			<li>jQuery easing - <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+            <li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+          </ul>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Support
+		============================ -->
+        <section id="idocs_support">
+          <h2>Support</h2>
+          <p>If this documentation doesn't answer your questions, So, Please send us Email via <a class="btn btn-primary" target="_blank" href="https://themeforest.net/user/harnishdesign#contact">Item Support Page</a></p>
+		  <p> We are located in GMT +5:30 time zone and we answer all questions within 12-24 hours in weekdays. In some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
+          <div class="alert alert-warning mb-4"><span class="badge badge-danger text-uppercase">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our template like bugs and errors. Custom modifications or third party module implementations are not included.</div>
+		  <h4>Don’t forget to Rate this template
+			<i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
+		  </h4>
+		  <div class="alert alert-success">
+            Please Add your Review (Opinion) for Our template. It would be a great support for us.<br>
+            Go to your <strong>Themeforest Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate & Review for our template.<br>
+			Thank You.
+          </div>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- More Templates
+		============================ -->
+        <section id="idocs_templates">
+          <h2>More Templates</h2>
+          <p class="lead">Checkout Our Below Premium Templates</p>
+		  
+		  <div class="row">
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/28476751?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/simone.jpg" alt="">
+			<h6 class="pt-2">Simone - Personal Portfolio Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/26454458?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/kenil.jpg" alt="">
+			<h6 class="pt-2">Kenil - Responsive Bootstrap 4 One Page Portfolio Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/26313677?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/doon.jpg" alt="">
+			<h6 class="pt-2">Doon - One Page Parallax HTML Template</h6>
+			</a>
+		  </div>
+		  
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/27172933?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/domainx.jpg" alt="">
+			<h6 class="pt-2">DomainX- Domain for Sale HTML Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/28848609?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/oxyy.jpg" alt="">
+			<h6 class="pt-2">Oxyy - Login and Register Form HTML Templates</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/27034971?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/koice.jpg" alt="">
+			<h6 class="pt-2">Koice - Invoice HTML Template</h6>
+			</a>
+		  </div>
+		  
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/24017808?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/payyed.jpg" alt="">
+			<h6 class="pt-2">Payyed - Money Transfer and Online Payments HTML Template</h6>
+			</a>
+		  </div>
+		  <div class="col-4 my-3 text-center">
+			<a target="_blank" href="https://themeforest.net/item/x/22375065?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/quickai.jpg" alt="">
+			<h6 class="pt-2">Quickai - Recharge & Bill Payment, Booking HTML5 Template</h6>
+			</a>
+		  </div>
+		  </div>
+		  
+		  <p class="text-center"><a class="btn btn-lg btn-primary my-4" target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Our Portfolio</a></p>
+          
+        </section>
+		
+		<hr class="divider">
+		
+        <!-- Changelog
+		============================ -->
+		
+        <section id="idocs_changelog">
+          <h2>Changelog</h2>
+          <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+		  <p class="alert alert-info mb-5"> For Future Updates Follow Us <a target="_blank" href="http://themeforest.net/user/harnishdesign?ref=HarnishDesign">@themeforest</a> / <a target="_blank" href="http://facebook.com/harnishdesign">@facebook</a> / <a target="_blank" href="http://twitter.com/harnishdesign">@twitter</a> / <a target="_blank" href="https://dribbble.com/harnishdesign">@Dribbble</a></p>
+          
+		  <h3 id="v1-1">Version 1.1 <small class="text-muted">(12 Oct, 2020)</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-success">Added</span> Your information here for added new feature</li>
+            <li><span class="badge badge-danger">Fixed</span> Some minor bugs for browser compatibility</li>
+			<li><span class="badge badge-danger">Fixed</span> Some minor bugs for responsive</li>
+            <li><span class="badge badge-info">Updated</span> FontAwesome to Latest Version</li>
+			<li><span class="badge badge-info">Updated</span> Bootstrap to Latest Version</li>
+			<li><span class="badge badge-info">Updated</span> Improvements in CSS and JS</li>
+          </ul>
+		  
+		  <hr class="divider">
+		  
+          <h3 id="v1-0">Version 1.0 <small class="text-muted">(8 April, 2020)</small></h3>
+          <p>Initial Release</p>
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
