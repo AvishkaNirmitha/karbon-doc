@@ -185,7 +185,11 @@
         <li class="nav-item"><a class="nav-link" href="#MM_trade_close">Close Trade</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_leverage_change">Change Leverage</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Lverage_Type_change">Change Leverage Type</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">reperchase</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">repurchase</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">Hedge Mode Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">End cycle at % gain</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">Hedge trade PnL cycle count</a></li>
+
       </ul>
     </li>
     </div>
@@ -1285,6 +1289,58 @@
         </section>
         <hr class="divider">
 
+        <!-- Hedge Mode Types
+         ============================ -->
+
+         <section id="MM_Reset_Swing">
+           <h4>Reset after Swing</h4>
+           <p>In Karbon platform We can use 2 deferent methods in hedge mode.</p>
+           <ul>
+             <li>
+              Reset after Swing</li>
+               <p>In this mode, users can create a hedge trade that will be reset its stages after hit opposite side 1st stage 
+                For a example : if trade is at P4 stage and going down to hit N.1. after hit N.1 positive stages reset and it became P.entry stage.
+               </p>
+
+             <li>
+               No reset after Swing</li>
+           </ul>
+           <p>In this mode, users can create a hedge trade that will not be reset its stages after hit opposite side 1st stage 
+                For a example : if trade is at P4 stage and going down to hit N.1. after hit N.1 positive stage remains P.4 stage.
+               </p>
+
+         </section>
+
+         <hr class="divider">
+
+
+         <!-- End cycle at % gain
+         ============================ -->
+         <section id="MM_Wallet_Cycles_at">
+           <h4>End cycle at % gain</h4>
+           <p>In this scenario, after opening the latest trade in hedge mode, we record the latest wallet balance,
+             and the user can define a stage to execute this process by using MM setting stages (check box). 
+             The user can enter a % value using the dropdown menu, and we check after the selected stage hits; 
+             the profit of that hedge trade at the beginning, if the profit is => wallet_balance * selected_percentage, 
+             both trades will close and reopen until the cycle count is finished. 0% means this feature is inactive at the 
+             time. 
+            </p>
+          
+         </section>
+
+         <hr class="divider">
+
+         <!-- Hedge trade PnL cycle count 
+         ============================ -->
+         <section id="MM_PnL_Cycle">
+           <h4>Hedge trade PnL cycle count </h4>
+           <p>The user can define the cycle count by this setting; that means if a hedge trade is closed with a 
+            profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
+             The user can define using this setting how many times it needs to run; after the cycle count ends, 
+            no hedge trade is open for that pair. </p>
+         </section>
+         <hr class="divider">
+
 
        
             <!-- Changelog
@@ -1311,14 +1367,12 @@
   ============================ -->
   <footer id="footer" class="section bg-dark footer-text-light">
     <div class="container">
-      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+      <!-- <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
         <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
         <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
         <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
         <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
-      </ul>
-      <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
-	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+      </ul> -->
     </div>
   </footer>
   <!-- Footer end -->
