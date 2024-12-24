@@ -1300,14 +1300,21 @@
               Reset after Swing</li>
                <p>In this mode, users can create a hedge trade that will be reset its stages after hit opposite side 1st stage 
                 For a example : if trade is at P4 stage and going down to hit N.1. after hit N.1 positive stages reset and it became P.entry stage.
+                If negative stage is repurchase, that quantity will be dropped with small profit at latest entry price. For that It create TP order in Bybit
                </p>
 
              <li>
                No reset after Swing</li>
-           </ul>
+           
            <p>In this mode, users can create a hedge trade that will not be reset its stages after hit opposite side 1st stage 
                 For a example : if trade is at P4 stage and going down to hit N.1. after hit N.1 positive stage remains P.4 stage.
-               </p>
+               </p></ul>
+
+               <img
+            src="assets\images\doc-images\Swing.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
 
          </section>
 
@@ -1325,7 +1332,11 @@
              both trades will close and reopen until the cycle count is finished. 0% means this feature is inactive at the 
              time. 
             </p>
-          
+          <img
+            src="assets\images\doc-images\endCycle.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
          </section>
 
          <hr class="divider">
@@ -1338,6 +1349,11 @@
             profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
              The user can define using this setting how many times it needs to run; after the cycle count ends, 
             no hedge trade is open for that pair. </p>
+            <img
+            src="assets\images\doc-images\cycleCount.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
          </section>
          <hr class="divider">
 
