@@ -185,10 +185,11 @@
         <li class="nav-item"><a class="nav-link" href="#MM_trade_close">Close Trade</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_leverage_change">Change Leverage</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Lverage_Type_change">Change Leverage Type</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">repurchase</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">Hedge Mode Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">Repurchase</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">Reset after Swing</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">End cycle at % gain</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">Hedge trade PnL cycle count</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">Close all hedge positions</a></li>
 
       </ul>
     </li>
@@ -1356,6 +1357,23 @@
             />
          </section>
          <hr class="divider">
+
+         <!-- Hedge trade PnL cycle count 
+         ============================ -->
+         <section id="MM_Hedge_all_close">
+           <h4>Hedge Trade All close </h4>
+           <p>This is a trade action type with a 100% close; users cannot set any stages after this stage set.
+             and also it can be set in a combine mode, split mode, or positive and negative side.
+              If the hedge trade hit this stage, both trades are closing at the moment.
+             that close, not calculate profit gain</p>
+            <img
+            src="assets\images\doc-images\AllHedgeClose.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+         </section>
+         <hr class="divider">
+         
 
 
        
