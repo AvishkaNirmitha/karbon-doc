@@ -193,6 +193,13 @@
 
       </ul>
     </li>
+    <li class="nav-item"><a class="nav-link" href="#MM_Errors">Common Errors </a>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">Tracking Disable error list.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Tich_size">Tick size error.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">Base Price Error.</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#MM_Errors_4">Tracking Disable error list.</a></li>  -->
+      </ul>
     </div>
     
     <!-- Docs Content
@@ -1374,21 +1381,95 @@
             />
          </section>
          <hr class="divider">
+
+         <!-- Common errors 
+         ============================ -->
+         <section id="MM_Errors">
+           <h3>Common Errors</h3>
+           <p>Some common errors that can occur while using the hedge mode in Karbon:</p>
+         </section>
+
+         <hr class="divider">
+
+         <!-- Tracking Disabled errors 
+         ============================ -->
+         <section id="MM_Errors_Tracking_Disabled">
+         <h3>Tracking Disabled errors </h3>
+            <p class="text_m text_color">If any of the following errors appear in the log mentioned below, tracking will be disabled.</p>
+
+        <ul>
+          <li>unified account is forbidden</li>
+          <li>Adjust will trigger liq</li>
+          <li>Permission denied</li>
+          <li>api_key expire</li>
+          <li>AB not enough</li>
+          <li>invalid api_key</li>
+          <li>unmatched ip</li>
+          <li>cannot set leverage</li>
+          <li>CannotAffordOrderCost</li>
+          <li>position idx not match position mode</li>
+          <li>Insufficient position</li>
+          <li>API key is invalid</li>
+          <li>Invalid ACCESS_KEY</li>
+          <li>The order size is greater than the max open size</li>
+          <li>Unable To Update The Leverage Factor Of This Position, There Is Not Enough Margin!</li>
+          <li>Unmatched IP, please check your API key's bound IP addresses</li>
+          <li>current position is zero, cannot fix reduce-only order qty</li>
+          <li>Reduce-only rule not satisfied</li>
+          <li>Too Many Requests</li>
+          <li>There is currently an order, or an order is planned, and the leverage cannot be adjusted.</li>
+          <li>The product or service you are seeking to access is not available to you due to regulatory restrictions.If you believe you are a permitted customer of this product or service,please reach out to us at support@bybit.com</li>
+          <li>Exceeded the maximum settable leverage</li>
+          <li>Less Than The Minimum Amount 5 USDT</li>
+          <li>Qty not in range</li>
+          <li>The order size cannot exceed the maximum size of the positionLevel</li>
+          <li>No trade found</li>
+          <li>Any Adjustments Made Will Trigger Immediate Liquidation</li>
+          <li>The number of contracts exceeds maximum limit allowed: too large</li>
+          <li>Params Error: Buy Or Sell Leverage Is Greater Than</li>
+          <li>Fix Price Failed For</li>
+          <br>
+         </section>
+
          
 
 
        
-            <!-- Changelog
+            <!-- Tick Size Errors
 		============================ -->
 		
-        <section id="idocs_changelog">  
-		      
+        <section id="Tich_size">  
+          <h3>Tick Size Error</h3>
+          <p>
+            Assume you have $500 in your trading account, you configure the trade to open with 1% of wallet balance, 
+            the starting amount of the trade is $5, with 20x leverage, the total position size is equal to 100%, 
+            and with the current market price, you can buy 0.001 BTC for $100. In bybit, 
+            the minimum close/open quantity in BTC is 0.001 BTC (tick size).
+            that minimum close/open quantity is different for every pair. In this configuration, 
+            the stage is set as 50% close, which is equal to 0.0005 BTC. In this scenario, 
+            bybit rounded the value to 0.001 because of tick size; in that case, trade is closed 100% from the bybit side. 
           
-          
-
+          </p>
+          <p>For more Info : <a href="https://drive.google.com/file/d/1eDFaWmSN_aWa1pBNiU8sFvs7Y-i5SuT8/view?usp=sharing">Click Here</a>
+          </p>
         </section>        
         
         <hr class="divider">
+
+        <!-- Hedging Errors
+         ============================ -->
+        <section id="Base_Price_Error">
+          <h3>Base Price Error</h3>
+          <p>
+            Positive trade close _  in positive trade close this error can log , reason for that error is the price of the  TP order that we Trying to place is lower than last price , 
+	          solution for this error is if error logs ,in that time we execute the active stage of that trade , 
+
+          </p>
+          <p>For more Info : <a href="https://drive.google.com/file/d/17m-Kv_Kx3TvLTtGS3cICnXNCjGdcGQOD/view?usp=sharing">Click Here</a>
+          </p>
+
+           </section>  
+        
 
       </div>
     </div>
