@@ -201,10 +201,11 @@
     </li>
     <li class="nav-item"><a class="nav-link" href="#MM_Errors">Common Errors </a>
       <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">10.1.Tracking Disable error list.</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Tich_size">10.2.Tick size error.</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">10.3.Base Price Error.</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="#MM_Errors_4">Tracking Disable error list.</a></li>  -->
+        <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">10.01 Tracking Disable error list</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Tich_size">10.02 Tick size error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">10.03 Base Price Error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#API_Error">10.04 Base Price Error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conflict_TP">10.05 Conflicts In TP Orders</a></li>
       </ul>
     </div>
     
@@ -1492,6 +1493,45 @@
           </p>
 
            </section>  
+            <hr class="divider">
+            <!-- API errors
+         ============================ -->
+         <section id="#API_Error">
+          <h3>10.4.API key errors</h3>
+          <p>
+            error - "API key is invalid."
+            <br>
+            reason - Incorrect bybit api key
+          </p>
+          
+
+           </section>  
+           <hr class="divider">
+            <!-- Hedging Errors
+         ============================ -->
+        
+         <section id="conflict_TP">
+          <h3>10.5. Conflict in TPs</h3>
+          <p>
+            <b>Error -</b> Repurchase TP is greater than partial close TP
+            <br>
+            <b>reason -</b>
+              <ul>
+              <li>Partial TP (ROI-based): Triggers when your profit reaches a percentage of your investment (e.g., 0.5% ROI).</li>
+              <li>Repurchase TP (Price-based): Triggers when the price hits a specific level (e.g., entry price ±0.1%).</li>
+              </ul>
+            <b>Why Partial TP Hits First?</b>: If the price moves quickly in your favor, it may cross the ROI threshold (Partial TP) before pausing or retracing to hit the tight price-based Repurchase TP.
+          </p>
+          
+        <b>example</b><br>
+                latest entry=100,partial close at 0.5%, leverage 20x<br>
+                Repurchase TP creating (based on Trigger Price) at 100.1 .<br>
+                partial close TP creating (based on ROI) at 101 .
+
+           </section>  
+           <hr class="divider">
+            <!-- Hedging Errors
+         ============================ -->
         
 
       </div>
