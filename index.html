@@ -182,6 +182,7 @@
         <li class="nav-item"><a class="nav-link" href="#Minimum_Profit_Target">8.6.Minimum Profit Target</a></li>
         <li class="nav-item"><a class="nav-link" href="#Enable_Trade_Hedging">8.7.Enable Trade Hedging</a></li>
         <li class="nav-item"><a class="nav-link" href="#Trading_View_Trades">8.8.Create Stages for Trading View Trades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#configEx">8.9.Configurations setup examples.</a></li>
       
       </ul>
     </li>
@@ -1195,6 +1196,95 @@
 
                 </section>
                 <br>
+                <section id="configEx">
+                  <h4>8.9.Configurations setup examples.</h4>
+                  <h5><b>Normal Hedge Cycle with Unlimited Loops</b></h5>
+                  <P>To run normal hedge cycles with unlimited loops:
+                    <ul>
+                      <li>Do not use a reopen stage.</li>
+                      <li>Set the cycle count to unlimited.</li>
+                    </ul>
+                  
+                  <img
+                        src="assets/Trade Con Set/1.png"
+                        class="img-fluid mt-4 mb-3"
+                        alt="Responsive image"
+                        />
+                        this configuration runs unlimited hedge cycles.
+                  </P>
+                  <br>
+                 
+                  <h5><b>Unlimited Reopen Trades Using the “Reopen Trade” Stage</b></h5>
+                  <P>If you need to run the reopen stage after every 100% close stage:
+                    <ul>
+                      <li>Include the reopen stage as the last stage.</li>
+                      <img
+                      src="assets/Trade Con Set/2.png"
+                      class="img-fluid mt-4 mb-3"
+                      alt="Responsive image"
+                      />
+                      <li>Set the cycle count to unlimited.</li>
+                      <img
+                      src="assets/Trade Con Set/3.png"
+                      class="img-fluid mt-4 mb-3"
+                      alt="Responsive image"
+                      />
+                      This configuration allows unlimited trade loops with the reopen stage active.
+
+                    </ul>
+                    
+                    
+                      </P>
+                      <p>
+                      <h5><b>Setup for Specific Cycle Count in a Hedge Trade without reopen stage 
+                      </b></h5>
+                      <P>To configure a trade with a specific number of cycles:
+
+                        <ul>
+                          <li>Set the cycle count to the desired number.
+                          </li>
+                          <li>Ensure the 100% Close Trade is the final stage.
+                          </li>
+                        </ul>
+                      
+                      <img
+                            src="assets/Trade Con Set/4.png"
+                            class="img-fluid mt-4 mb-3"
+                            alt="Responsive image"
+                            />
+                          </p>
+                          <p>
+                            <h5><b>Running Reopen Stage After a Specific Cycle Count.</b>
+                            </h5>
+                            <P>To run the reopen stage only after completing a certain number of cycles:
+                              <ul>
+                                <li>Set the reopen stage at the end of the configuration.
+                                </li>
+                                <li>Define your desired cycle count.
+                                </li>
+                                
+                              </ul>
+                              Once the cycle count completes, the reopen stage will trigger automatically.
+
+                            <img
+                                  src="assets/Trade Con Set/5.png"
+                                  class="img-fluid mt-4 mb-3"
+                                  alt="Responsive image"
+                                  />
+                                </p>
+                                <p>
+                                  Example:
+                                  <ul>
+                                    <li>Cycle Count = 10</li>
+                                  </ul>
+                                       
+                                        After completing 10 hedge cycles, the reopen stage will run.
+
+                                </p>
+
+    
+
+                </section>
                 <hr class="divider">
 		
 		<!-- Advance Money Management Settings
