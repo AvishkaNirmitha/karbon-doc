@@ -59,7 +59,7 @@
           </a>
           
           <span class="ml-2 mr-auto text-2"><b style="font-size:20px">KARBON</b>
-            v2.0</span>
+            v4.1</span>
           <!-- Logo End -->
         
 		<!-- Navbar Toggler -->
@@ -193,11 +193,14 @@
         <li class="nav-item"><a class="nav-link" href="#MM_leverage_change">9.3.Change Leverage</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Lverage_Type_change">9.4.Change Leverage Type</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">9.5.Repurchase</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.6.Reset after Swing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.7.End cycle at % gain</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.8.Hedge trade PnL cycle count</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">9.9.Close all hedge positions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">9.6.Close all hedge positions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Conv_Hedge">9.7.Convert to Hedge</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reopen_stg">9.8.Trade Reopen</a></li>
 
+        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.9.Reset after Swing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.10.End cycle at % gain</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.11.Hedge trade PnL cycle count</a></li>
+       
       </ul>
     </li>
     <li class="nav-item"><a class="nav-link" href="#MM_Errors">Common Errors </a>
@@ -1412,11 +1415,56 @@
         </section>
         <hr class="divider">
 
+        <!-- Hedge trade PnL cycle count 
+         ============================ -->
+         <section id="MM_Hedge_all_close">
+          <h4>9.6.Hedge Trade All close </h4>
+          <p>This is a trade action type with a 100% close; users cannot set any stages after this stage set.
+            and also it can be set in a combine mode, split mode, or positive and negative side.
+             If the hedge trade hit this stage, both trades are closing at the moment.
+            that close, not calculate profit gain</p>
+           <img
+           src="assets\images\doc-images\AllHedgeClose.png"
+           class="img-fluid mt-4 mb-3"
+           alt="Responsive image"
+           />
+        </section>
+        <hr class="divider">
+
+        <section id="MM_Conv_Hedge">
+         <h4>9.7.Convert To Hedge </h4>
+         <p>In the "Convert to Hedge" stage, a trade open signal is 
+           triggered for the opposite side of the existing position. As a result, 
+           both long and short trades are held on the same currency pair, which are then transitioned
+           into a hedged state. Make sure to configure the trade value or
+            percentage—based on your basic settings—to determine the position size of the opposite trade.</p>
+          <img
+          src="assets\images\doc-images\Conv_hedge.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+       </section>
+       <hr class="divider">
+
+       <section id="MM_Reopen_stg">
+         <h4>9.8.Trade Reopen Stage </h4>
+         <p>
+           The "Reopen Trade" stage initiates a new trade—either on the same or opposite side—based on a specified percentage of the previous trade's PnL.
+            To configure this stage, a "100% Close Trade" stage must be set beforehand; without it,
+            the Reopen Trade stage cannot be activated.</p>
+          <img
+          src="assets\images\doc-images\reopen.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+       </section>
+       <hr class="divider">
+
         <!-- Hedge Mode Types
          ============================ -->
 
          <section id="MM_Reset_Swing">
-           <h4>9.6.Reset after Swing</h4>
+           <h4>9.9.Reset after Swing</h4>
            <p>In Karbon platform We can use 2 deferent methods in hedge mode.</p>
            <ul>
              <li>
@@ -1447,7 +1495,7 @@
          <!-- End cycle at % gain
          ============================ -->
          <section id="MM_Wallet_Cycles_at">
-           <h4>9.7.End cycle at % gain</h4>
+           <h4>9.10.End cycle at % gain</h4>
            <p>In this scenario, after opening the latest trade in hedge mode, we record the latest wallet balance,
              and the user can define a stage to execute this process by using MM setting stages (check box). 
              The user can enter a % value using the dropdown menu, and we check after the selected stage hits; 
@@ -1467,7 +1515,7 @@
          <!-- Hedge trade PnL cycle count 
          ============================ -->
          <section id="MM_PnL_Cycle">
-           <h4>9.8.Hedge trade PnL cycle count </h4>
+           <h4>9.11.Hedge trade PnL cycle count </h4>
            <p>The user can define the cycle count by this setting; that means if a hedge trade is closed with a 
             profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
              The user can define using this setting how many times it needs to run; after the cycle count ends, 
@@ -1480,21 +1528,8 @@
          </section>
          <hr class="divider">
 
-         <!-- Hedge trade PnL cycle count 
-         ============================ -->
-         <section id="MM_Hedge_all_close">
-           <h4>9.9.Hedge Trade All close </h4>
-           <p>This is a trade action type with a 100% close; users cannot set any stages after this stage set.
-             and also it can be set in a combine mode, split mode, or positive and negative side.
-              If the hedge trade hit this stage, both trades are closing at the moment.
-             that close, not calculate profit gain</p>
-            <img
-            src="assets\images\doc-images\AllHedgeClose.png"
-            class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
-            />
-         </section>
-         <hr class="divider">
+         
+
 
          <!-- Common errors 
          ============================ -->
