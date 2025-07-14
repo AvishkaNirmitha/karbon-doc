@@ -189,17 +189,18 @@
     <li class="nav-item"><a class="nav-link" href="#MM_Config">Advance Money Management Settings </a>
       <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link" href="#MM_modes">9.1.Classic and Split Mode(with positive)</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_trade_close">9.2.Close Trade</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_leverage_change">9.3.Change Leverage</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Lverage_Type_change">9.4.Change Leverage Type</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">9.5.Repurchase</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">9.6.Close all hedge positions</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Conv_Hedge">9.7.Convert to Hedge</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Reopen_stg">9.8.Trade Reopen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_trade_types">9.2.Close Trade</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_trade_close">9.3.Close Trade</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_leverage_change">9.4.Change Leverage</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Lverage_Type_change">9.5.Change Leverage Type</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reperchase">9.6.Repurchase</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">9.7.Close all hedge positions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Conv_Hedge">9.8.Convert to Hedge</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reopen_stg">9.9.Trade Reopen</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.9.Reset after Swing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.10.End cycle at % gain</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.11.Hedge trade PnL cycle count</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.10.Reset after Swing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.11.End cycle at % gain</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.12.Hedge trade PnL cycle count</a></li>
        
       </ul>
     </li>
@@ -1325,8 +1326,8 @@
 
 		<!-- Close Trades
 		============================ -->
-        <section id="MM_trade_close" >
-          <h4>9.2.Close Trades</h4>
+        <section id="MM_trade_types" >
+          <h4>9.2.Stage Types.</h4>
           <p class="text_m">In the Karabon platform, there are 4 types of actions that can be triggered as per your settings</p>
           <ul class="text_m">
             <li>Close Trade</li>
@@ -1339,6 +1340,7 @@
             <!-- Close trades action
 		============================ -->
         <section id="MM_close_trade" >
+          <h4>9.3.Close Trades.</h4>
           
           <p>In this take action, users can define a profit or loss percentage and position size that need to close. 
             If the trade PnL% hits that given value, the action will trigger immediately.
@@ -1359,7 +1361,7 @@
 		============================ -->
 
         <section id="MM_leverage_change" >
-          <h4>9.3.Change Leverage</h4>
+          <h4>9.4.Change Leverage</h4>
           <p>Change leverage is a feature that allows users to change the leverage of the trade. 
             If the trade PnL% hits that given value, the action will trigger immediately.
           </p>
@@ -1377,7 +1379,7 @@
              ============================ -->
 
         <section id="MM_Lverage_Type_change" >
-          <h4>9.4.Change Leverage Type</h4>
+          <h4>9.5.Change Leverage Type</h4>
           <p>Change leverage type is a feature that allows users to change the leverage type of the trade.
               If the trade PnL% hits that given value, the action will trigger immediately.
           </p>
@@ -1400,7 +1402,7 @@
              ============================ -->
 
         <section id="MM_Reperchase" >
-          <h4>9.5.Repurchase</h4>
+          <h4>9.6.Repurchase</h4>
           <p>Repurchase is a feature that allows users to repurchase the trade.
               If the trade PnL% hits that given value, the action will trigger immediately.
           </p>
@@ -1418,7 +1420,7 @@
         <!-- Hedge trade PnL cycle count 
          ============================ -->
          <section id="MM_Hedge_all_close">
-          <h4>9.6.Hedge Trade All close </h4>
+          <h4>9.7.Hedge Trade All close </h4>
           <p>This is a trade action type with a 100% close; users cannot set any stages after this stage set.
             and also it can be set in a combine mode, split mode, or positive and negative side.
              If the hedge trade hit this stage, both trades are closing at the moment.
@@ -1432,7 +1434,7 @@
         <hr class="divider">
 
         <section id="MM_Conv_Hedge">
-         <h4>9.7.Convert To Hedge </h4>
+         <h4>9.8.Convert To Hedge </h4>
          <p>In the "Convert to Hedge" stage, a trade open signal is 
            triggered for the opposite side of the existing position. As a result, 
            both long and short trades are held on the same currency pair, which are then transitioned
@@ -1447,7 +1449,7 @@
        <hr class="divider">
 
        <section id="MM_Reopen_stg">
-         <h4>9.8.Trade Reopen Stage </h4>
+         <h4>9.9.Trade Reopen Stage </h4>
          <p>
            The "Reopen Trade" stage initiates a new trade—either on the same or opposite side—based on a specified percentage of the previous trade's PnL.
             To configure this stage, a "100% Close Trade" stage must be set beforehand; without it,
@@ -1464,7 +1466,7 @@
          ============================ -->
 
          <section id="MM_Reset_Swing">
-           <h4>9.9.Reset after Swing</h4>
+           <h4>9.10.Reset after Swing</h4>
            <p>In Karbon platform We can use 2 deferent methods in hedge mode.</p>
            <ul>
              <li>
@@ -1495,7 +1497,7 @@
          <!-- End cycle at % gain
          ============================ -->
          <section id="MM_Wallet_Cycles_at">
-           <h4>9.10.End cycle at % gain</h4>
+           <h4>9.11.End cycle at % gain</h4>
            <p>In this scenario, after opening the latest trade in hedge mode, we record the latest wallet balance,
              and the user can define a stage to execute this process by using MM setting stages (check box). 
              The user can enter a % value using the dropdown menu, and we check after the selected stage hits; 
@@ -1515,7 +1517,7 @@
          <!-- Hedge trade PnL cycle count 
          ============================ -->
          <section id="MM_PnL_Cycle">
-           <h4>9.11.Hedge trade PnL cycle count </h4>
+           <h4>9.12.Hedge trade PnL cycle count </h4>
            <p>The user can define the cycle count by this setting; that means if a hedge trade is closed with a 
             profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
              The user can define using this setting how many times it needs to run; after the cycle count ends, 
