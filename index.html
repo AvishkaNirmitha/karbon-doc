@@ -197,10 +197,11 @@
         <li class="nav-item"><a class="nav-link" href="#MM_Hedge_all_close">9.7.Close all hedge positions</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Conv_Hedge">9.8.Convert to Hedge</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Reopen_stg">9.9.Trade Reopen</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.10.Reset after Swing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.11.End cycle at % gain</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.12.Hedge trade PnL cycle count</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="#MM_Reopen_NewAcc">9.10.Trade Reopen (Another Account)</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.11.Reset after Swing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.12.End cycle at % gain</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.13.Hedge trade PnL cycle count</a></li>
        
       </ul>
     </li>
@@ -1328,12 +1329,16 @@
 		============================ -->
         <section id="MM_trade_types" >
           <h4>9.2.Stage Types.</h4>
-          <p class="text_m">In the Karabon platform, there are 4 types of actions that can be triggered as per your settings</p>
+          <p class="text_m">In the Karabon platform, there are 8 types of actions that can be triggered as per your settings</p>
           <ul class="text_m">
             <li>Close Trade</li>
             <li>Change Leverage</li>
             <li>Change lLeverage Type</li>
             <li>Repurcherse</li>
+            <li>reopen trade</li>
+            <li>convert to Hedge</li>
+            <li>reopen trades (Another Account)</li>
+            <li>Close All Hedge trades</li>
           </ul>
           <hr class="divider">
 
@@ -1462,11 +1467,34 @@
        </section>
        <hr class="divider">
 
+
+       <section id="MM_Reopen_NewAcc">
+         <h4>9.10.Trade Reopen Stage (Another Account). </h4>
+         <p>
+           Similar to the "Reopen Stage" feature, instead of opening a new trade in the same account, 
+           the "Reopen in Another Account" option allows triggering a trade signal in a different, 
+           user-selected account already added to Karbon. </p>
+           <img
+          src="assets\images\doc-images\reopenNewAcc.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+          <p>
+           Users can configure the trade side (buy/sell) and specify which account the new trade should be executed in.</p>
+
+          <img
+          src="assets\images\doc-images\selectAccount.png"
+          class="img-fluid mt-4 mb-3"
+          alt="Responsive image"
+          />
+       </section>
+       <hr class="divider">
+
         <!-- Hedge Mode Types
          ============================ -->
 
          <section id="MM_Reset_Swing">
-           <h4>9.10.Reset after Swing</h4>
+           <h4>9.11.Reset after Swing</h4>
            <p>In Karbon platform We can use 2 deferent methods in hedge mode.</p>
            <ul>
              <li>
@@ -1497,7 +1525,7 @@
          <!-- End cycle at % gain
          ============================ -->
          <section id="MM_Wallet_Cycles_at">
-           <h4>9.11.End cycle at % gain</h4>
+           <h4>9.12.End cycle at % gain</h4>
            <p>In this scenario, after opening the latest trade in hedge mode, we record the latest wallet balance,
              and the user can define a stage to execute this process by using MM setting stages (check box). 
              The user can enter a % value using the dropdown menu, and we check after the selected stage hits; 
@@ -1517,7 +1545,7 @@
          <!-- Hedge trade PnL cycle count 
          ============================ -->
          <section id="MM_PnL_Cycle">
-           <h4>9.12.Hedge trade PnL cycle count </h4>
+           <h4>9.13.Hedge trade PnL cycle count </h4>
            <p>The user can define the cycle count by this setting; that means if a hedge trade is closed with a 
             profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
              The user can define using this setting how many times it needs to run; after the cycle count ends, 
