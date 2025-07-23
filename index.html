@@ -212,6 +212,7 @@
         <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">10.03 Base Price Error</a></li>
         <li class="nav-item"><a class="nav-link" href="#API_Error">10.04 Base Price Error</a></li>
         <li class="nav-item"><a class="nav-link" href="#conflict_TP">10.05 Conflicts In TP Orders</a></li>
+        <li class="nav-item"><a class="nav-link" href="#balance_case">10.06 Available balance incorrect error </a></li>
       </ul>
     </div>
     
@@ -1693,8 +1694,37 @@
 
            </section>  
            <hr class="divider">
-            <!-- Hedging Errors
+
+             <!-- balance case 
          ============================ -->
+           <section id="balance_case">
+          <h3>10.6. Available balance incorrect error. </h3>
+          
+            <b>Error -</b>Available balance is grater than Account Balance 
+             <img
+            src="./assets/images/doc-images/Balanceerror.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+            <br>
+            <b>reason -</b>
+                  If an API key is created without enabling the "Assets" permission, 
+                   the available balance may incorrectly display the combined total of USDT and USDC,
+                  while the actual account balance only reflects the USDT amount.
+              <P>
+                <b>solution - </b>
+                To prevent this mismatch, please ensure that the "Assets" permission is enabled when generating API keys.
+                
+              </P>
+            <br>
+            <img
+            src="./assets/images/doc-images/APIerrorimg.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+
+           </section>  
+           <hr class="divider">
         
 
       </div>
