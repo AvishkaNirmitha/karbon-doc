@@ -205,15 +205,28 @@
        
       </ul>
     </li>
+
+    <li class="nav-item"><a class="nav-link" href="#MM_Auto">Auto Trading </a>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#MM_AI_trading">10.01 AI Trading Algorithms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_TV_AlertAuto">10.02 Auto TV Alert Setup</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_TV_AlertManual">10.03 Manual TV Alert Setup</a></li>
+      </ul>
+    </li>
+
+
     <li class="nav-item"><a class="nav-link" href="#MM_Errors">Common Errors </a>
       <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">10.01 Tracking Disable error list</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Tich_size">10.02 Tick size error</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">10.03 Base Price Error</a></li>
-        <li class="nav-item"><a class="nav-link" href="#API_Error">10.04 Base Price Error</a></li>
-        <li class="nav-item"><a class="nav-link" href="#conflict_TP">10.05 Conflicts In TP Orders</a></li>
-        <li class="nav-item"><a class="nav-link" href="#balance_case">10.06 Available balance incorrect error </a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">11.01 Tracking Disable error list</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Tich_size">11.02 Tick size error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">11.03 Base Price Error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#API_Error">11.04 Base Price Error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conflict_TP">11.05 Conflicts In TP Orders</a></li>
+        <li class="nav-item"><a class="nav-link" href="#balance_case">11.06 Available balance incorrect error </a></li>
       </ul>
+    </li>
+
+    
     </div>
     
     <!-- Docs Content
@@ -1559,12 +1572,69 @@
          <hr class="divider">
 
          
+         <!-- Auto Trading 
+         ============================ -->
+
+         <section id="MM_Auto">
+           <h3>10.0.Auto Trading</h3>
+           <p>The Auto Trading feature enables automated trade execution and management through either TradingView signals or Admin signals.
+              <br>
+              Auto Trading supports the following:
+              <ul>
+              <li>Admin-triggered signals</li>
+              <li> Direct integration with TradingView strategies</li>
+            </ul></p> 
+              When using admin-triggered signals, two modes are available:
+              <br>
+              <ul> 
+              <li>AI Trading Algorithms </li>
+              <li>Auto TradingView Alert Setup.</li>
+             </ul>
+         </section>
+         <hr class="divider">
+
+
+         <section id="MM_AI_trading">
+           <h4>10.01. AI Trading Algorithms</h4>
+           <P>
+            AI Trading Algorithms are admin-configured strategies. Users can enable and run these algorithms by selecting their preferred ones.
+            If a user is subscribed to an algorithm, whenever the admin triggers a signal for that specific algorithm, 
+            the user’s account will automatically execute a trade based on the admin-defined settings.
+            This feature is user-type based. The admin can define which user types are eligible to participate in specific strategies.
+            </P>
+         </section>
+
+         <hr class="divider">
+
+
+         <section id="MM_TV_AlertAuto">
+           <h4>10.02.Auto TV Alert Setup</h4>
+           <p> Auto TradingView Alerts are another type of admin-defined strategy, similar to AI Trading Algorithms.
+            The key difference is that all users can subscribe to these strategies without user-type restrictions. Once subscribed, 
+            trades will be executed automatically whenever the admin triggers the corresponding signals.
+
+           </p>
+         </section>
+
+         <hr class="divider">
+
+          <section id="MM_TV_AlertManual">
+           <h4>10.03.Manual TV Alert Setup</h4>
+           <p>Manual TradingView Alerts allow users to integrate their own TradingView strategies directly with Karbon using a provided webhook URL and message body. Both must be added to TradingView for the connection to work. When TradingView triggers signals, Karbon will automatically execute them. Users can also define the strategy execution method in the “How do you want to close your trade” setting on the config page:
+            <Ul>
+            <li>Select “Wait for close signal from TradingView” if you want TradingView to manage the strategy fully.</li>
+           <li>Select “Close my trade by profits – Karbon Advanced Management” if you want Karbon’s Money Management stages to handle trade closures.</li>
+          </Ul>           
+            </p>
+         </section>
+
+         <hr class="divider">
 
 
          <!-- Common errors 
          ============================ -->
          <section id="MM_Errors">
-           <h3>10.0.Common Errors</h3>
+           <h3>11.0.Common Errors</h3>
            <p>Some common errors that can occur while using the hedge mode in Karbon:</p>
          </section>
 
@@ -1573,7 +1643,7 @@
          <!-- Tracking Disabled errors 
          ============================ -->
          <section id="MM_Errors_Tracking_Disabled">
-         <h3>10.1.Tracking Disabled errors </h3>
+         <h3>11.1.Tracking Disabled errors </h3>
             <p class="text_m text_color">If any of the following errors appear in the log mentioned below, tracking will be disabled.</p>
 
         <ul>
@@ -1618,7 +1688,7 @@
 		============================ -->
 		
         <section id="Tich_size">  
-          <h3>10.2.Tick Size Error</h3>
+          <h3>11.2.Tick Size Error</h3>
           <p>
             Assume you have $500 in your trading account, you configure the trade to open with 1% of wallet balance, 
             the starting amount of the trade is $5, with 20x leverage, the total position size is equal to 100%, 
@@ -1640,7 +1710,7 @@
         <!-- Hedging Errors
          ============================ -->
         <section id="Base_Price_Error">
-          <h3>10.3.Base Price Error</h3>
+          <h3>11.3.Base Price Error</h3>
           <p>
             Positive trade close _  in positive trade close this error can log , reason for that error is the price of the  TP order that we Trying to place is lower than last price , 
 	          solution for this error is if error logs ,in that time we execute the active stage of that trade , 
@@ -1654,7 +1724,7 @@
             <!-- API errors
          ============================ -->
          <section id="#API_Error">
-          <h3>10.4.API key errors</h3>
+          <h3>11.4.API key errors</h3>
           <p>
             error - "API key is invalid."
             <br>
@@ -1668,7 +1738,7 @@
          ============================ -->
         
          <section id="conflict_TP">
-          <h3>10.5. Conflict in TPs</h3>
+          <h3>11.5. Conflict in TPs</h3>
           <p>
             <b>Error -</b> Repurchase TP is greater than partial close TP
             <br>
@@ -1697,7 +1767,7 @@
              <!-- balance case 
          ============================ -->
            <section id="balance_case">
-          <h3>10.6. Available balance incorrect error. </h3>
+          <h3>11.6. Available balance incorrect error. </h3>
           
             <b>Error -</b>Available balance is grater than Account Balance 
              <img
