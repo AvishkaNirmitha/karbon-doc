@@ -1,97 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<link href="assets/images/favicon.png" rel="icon" />
-<title>Karbon User Guide</title>
-<meta name="description" content="karbon documentation">
-<meta name="author" content="harnishdesign.net">
+<link href="assets/images/favicon.png" rel="icon" type="image/png">
+<title>Karbon User Guide - Trading Documentation</title>
+<meta name="description" content="Complete documentation for Karbon trading platform including setup, configuration, and advanced money management features">
+<meta name="author" content="Karbon Team">
+<meta name="keywords" content="trading, cryptocurrency, bybit, bitget, automated trading, documentation">
+<meta name="robots" content="index, follow">
+
+<!-- Performance Optimizations -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
+<link rel="preload" href="assets/css/stylesheet.css" as="style">
+<link rel="preload" href="assets/vendor/jquery/jquery.min.js" as="script">
 
 <!-- Stylesheet
 ============================== -->
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 <!-- Font Awesome Icon -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
 <!-- Magnific Popup -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
 <!-- Highlight Syntax -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<link rel="stylesheet" href="assets/vendor/highlight.js/styles/github.css">
 <!-- Custom Stylesheet -->
-<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<link rel="stylesheet" href="assets/css/stylesheet.css">
+<!-- Notification Styles -->
+<link rel="stylesheet" href="assets/css/notification.css">
+<!-- Search Styles -->
+<link rel="stylesheet" href="assets/css/search.css">
 </head>
 
-<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125" role="document">
+
+<!-- Skip Links for Accessibility -->
+<a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+<a href="#navigation" class="sr-only sr-only-focusable">Skip to navigation</a>
 
 <!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ellipsis">
-  </div>
+<div class="preloader" role="status" aria-label="Loading">
+  <div class="lds-ellipsis" aria-hidden="true"></div>
 </div>
 <!-- Preloader End --> 
-
+<!-- Notification Popup -->
+<div class="notification-popup" id="newFieldsNotification" role="alert" aria-live="polite">
+  <button class="close-btn" aria-label="Close notification">&times;</button>
+  <p>New features added! Check out in Configurations <a class="nav-link active" href="#MM_Trailing" style="color: #fff; text-decoration: underline;">9.14 Trailing stop-loss</a> in Advance Money Management Settings.</p>
+</div>
 <!-- Document Wrapper   
 =============================== -->
 <div id="main-wrapper"> 
   
   <!-- Header
   ============================ -->
-  <header id="header" class="sticky-top"> 
+  <header id="header" class="sticky-top" role="banner">
     <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark" role="navigation" aria-label="Main navigation">
       <div class="container-fluid">
         <!-- Sidebar Toggler -->
-		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-		
-	        <!-- Logo -->
-          <a class="logo ml-md-3" href="index.html" title="iDocs Template">
-            <img
-              src="assets/images/logo.png"
-              class="logo-custom"
-              alt="Karbon Docs"
-            />
-          </a>
-          
-          <span class="ml-2 mr-auto text-2"><b style="font-size:20px">KARBON</b>
-            v4.1</span>
-          <!-- Logo End -->
+        <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button" aria-label="Toggle navigation" aria-controls="idocs-navigation" aria-expanded="false">
+          <span></span>
+          <span class="w-75"></span>
+          <span class="w-50"></span>
+        </button>
         
-		<!-- Navbar Toggler -->
-		<!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button> -->
+        <!-- Logo -->
+        <a class="logo ml-md-3" href="index.html" title="Karbon Documentation">
+          <img
+            src="assets/images/logo.png"
+            class="logo-custom"
+            alt="Karbon Documentation Logo"
+            width="120"
+            height="40"
+            loading="eager"
+          />
+        </a>
         
-		<!-- <div id="header-nav" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
-                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Another Action</a>
-                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
-              </ul>
-            </li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
-          </ul>
+        <span class="ml-2 mr-auto text-2"><strong style="font-size:20px">KARBON</strong> v4.1</span>
+        
+        <!-- Search Box -->
+        <div class="search-container ml-3">
+          <div class="input-group">
+            <input type="text" id="searchInput" class="form-control search-input" placeholder="Search documentation..." aria-label="Search documentation">
+            <div class="input-group-append">
+              <button class="btn btn-primary search-btn" type="button" id="searchBtn" aria-label="Search">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div id="searchResults" class="search-results"></div>
         </div>
-        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
-          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        </ul>
-      </div> -->
+        <!-- Search Box End -->
+        
+        <!-- Logo End -->
+      </div>
     </nav>
-    <!-- Navbar End --> 
   </header>
   <!-- Header End --> 
+  
+  <!-- Search Section -->
+  <div class="search-section bg-light d-flex align-items-center justify-content-center" style="min-height: 200px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="search-box-container text-center">
+            <h4 class="mb-4">Search Documentation</h4>
+            <div class="input-group input-group-lg mx-auto" style="max-width: 600px;">
+              <input type="text" id="mainSearchInput" class="form-control search-input-main" placeholder="Type to search through all documentation..." aria-label="Search documentation">
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-lg search-btn-main" type="button" id="mainSearchBtn" aria-label="Search">
+                  <i class="fas fa-search mr-2"></i>Search
+                </button>
+              </div>
+            </div>
+            <div id="mainSearchResults" class="main-search-results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Search Section End -->
   
   <!-- Content
   ============================ -->
@@ -99,16 +132,17 @@
     
 	<!-- Sidebar Navigation
 	============================ -->
-	<div class="idocs-navigation bg-light">
-      <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Introduction</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_installation">1.1.Purpose</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">1.2.What is Trading</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_sass">1.3.What is a Candlestick</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">1.4.What is a Candle Indicator</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">1.5.How to Use Indicator</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">1.6.How does Trading Work</a></li>
+	<nav id="navigation" class="idocs-navigation bg-light" role="navigation" aria-label="Documentation navigation">
+      <ul class="nav flex-column">
+        <li class="nav-item" role="none">
+          <a class="nav-link active" href="#idocs_start" aria-current="page">Introduction</a>
+          <ul class="nav flex-column" role="menu">
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_installation" role="menuitem">1.1.Purpose</a></li>
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_html_structure" role="menuitem">1.2.What is Trading</a></li>
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_sass" role="menuitem">1.3.What is a Candlestick</a></li>
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_color_schemes" role="menuitem">1.4.What is a Candle Indicator</a></li>
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_theme_customization" role="menuitem">1.5.How to Use Indicator</a></li>
+            <li class="nav-item" role="none"><a class="nav-link" href="#idocs_logo_settings" role="menuitem">1.6.How does Trading Work</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#idocs_layout">User Types & Sign Up</a>
@@ -179,7 +213,7 @@
         <li class="nav-item"><a class="nav-link" href="#Enable_Trade_Hedging">8.7.Enable Trade Hedging</a></li>
         <li class="nav-item"><a class="nav-link" href="#Trading_View_Trades">8.8.Create Stages for Trading View Trades</a></li>
         <li class="nav-item"><a class="nav-link" href="#configEx">8.9.Configurations setup examples.</a></li>
-      
+
       </ul>
     </li>
     <li class="nav-item"><a class="nav-link" href="#MM_Config">Advance Money Management Settings </a>
@@ -198,6 +232,7 @@
         <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.11.Reset after Swing</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.12.End cycle at % gain</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.13.Hedge trade PnL cycle count</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Trailing">9.14.Trailing stop-loss</a></li>
        
       </ul>
     </li>
@@ -216,23 +251,26 @@
         <li class="nav-item"><a class="nav-link" href="#MM_Errors_Tracking_Disabled">11.01 Tracking Disable error list</a></li>
         <li class="nav-item"><a class="nav-link" href="#Tich_size">11.02 Tick size error</a></li>
         <li class="nav-item"><a class="nav-link" href="#Base_Price_Error">11.03 Base Price Error</a></li>
-        <li class="nav-item"><a class="nav-link" href="#API_Error">11.04 Base Price Error</a></li>
+        <li class="nav-item"><a class="nav-link" href="#API_Error">11.04 API invalid Error</a></li>
         <li class="nav-item"><a class="nav-link" href="#conflict_TP">11.05 Conflicts In TP Orders</a></li>
         <li class="nav-item"><a class="nav-link" href="#balance_case">11.06 Available balance incorrect error </a></li>
       </ul>
     </li>
 
+   
+
     
-    </div>
+    </nav>
     
     <!-- Docs Content
 	============================ -->
-    <div class="idocs-content">
+    <main id="main-content" class="idocs-content" role="main">
       <div class="container"> 
        
         
         <section id="idocs_start">
           <h1>Introduction</h1>
+          <p class="lead">Welcome to the Karbon trading platform documentation. This guide will help you understand and configure all features of the platform.</p>
           <!-- <h2>Your ThemeForest Item Name Here</h2>
           <p class="lead">
             Thank you so much for purchasing our item from themeforest.
@@ -282,10 +320,10 @@
             This platform facilitates effortless trading by allowing users
             to establish personalized settings, thereby enabling trades to
             be executed automatically and requiring minimal human
-            intervention. This platform could potentially assist in closing
+            intervention. The platform assists in closing
             trades automatically when they reach a profitable point. This
             streamlined approach ensures a user-friendly experience that
-            stands out from traditional trading platforms
+            stands out from traditional trading platforms.
           </p>    
         </section>
         
@@ -299,18 +337,18 @@
             Trading is the buying and selling of financial instruments in
             order to make a profit. These instruments range from a variety
             of assets assigned a financial value that can go up or down.
-            Trading involves vigorous participation in the financial markets
+            Trading involves active participation in the financial markets
             compared to investing, which works on a buy-and-hold strategy.
-            The success of trading is dependent on the ability of a trader
+            The success of trading depends on the ability of a trader
             to be profitable over a period of time.
           </p>
           <p>
             A trader is a person who gets involved in buying and selling a
-            financial asset in any financial market. He or she can buy or
-            sell either for himself/herself or on behalf of another
+            financial asset in any financial market. They can buy or
+            sell either for themselves or on behalf of another
             individual or institution. The main difference between an
-            investor and a trader is the duration for which he or she holds
-            on to the asset.
+            investor and a trader is the duration for which they hold
+            the asset.
           </p>
           <p>
             A trader is a person who engages in the short-term purchasing
@@ -330,7 +368,7 @@
             of a security for a specific period.
           </p>
           <p>
-            wherein each candlestick details a single day’s trading. It has
+            wherein each candlestick details a single day's trading. It has
             three essential features:
           </p>
 
@@ -346,10 +384,10 @@
             </li>
           </ul>
 
-          <p id="">
+          <p>
             Over time, individual candlesticks form patterns that traders
             can use to recognize major support and resistance levels. There
-            are a great many candlestick patterns that indicate an
+            are many candlestick patterns that indicate an
             opportunity within a market – some provide insight into the
             balance between buying and selling pressures, while others
             identify continuation patterns or market indecision.
@@ -371,7 +409,8 @@
           <img
             src="assets/images/doc-images/1-3-candlestick.png"
             class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
+            alt="Candlestick chart showing price movements with body, wick, and color indicators"
+            loading="lazy"
           />        </section>
         
 		<hr class="divider">
@@ -413,7 +452,8 @@
           <img
             src="assets/images/doc-images/1-5-chart.png"
             class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
+            alt="Trading chart showing directional movement index indicator with color-coded candles"
+            loading="lazy"
           />
         </section>
         
@@ -426,15 +466,15 @@
 
               <p>
                 When trading, the user profit if the market price moves in the
-                same direction as the user’s speculation; however, if it takes
-                the opposite direction, the user incur a loss. It’s important to
+                same direction as the user's speculation; however, if it takes
+                the opposite direction, the user incur a loss. It's important to
                 note that trading is inherently risky and could lose more than
-                expected if don’t take the appropriate risk management steps.
+                expected if don't take the appropriate risk management steps.
                 Trading happens between two parties and often involves a dealer
                 network. No central, physical location only a virtual network of
                 participants. Timings 24/7. Contracts are Customized.
                 Counterparty risk, assets can be more volatile, and can be
-                traded on leverage, which means there’s a risk of losing more
+                traded on leverage, which means there's a risk of losing more
                 than the deposit
               </p>
         </section>
@@ -454,46 +494,48 @@
 		============================ -->
         <section id="idocs_header">
           <h2>2.1.User Types</h2>
-         <table>
-            <tr>
-              <th>User Type</th>
-              <th>description</th>
-            </tr>
-            <tr>
-              <td>Default User</td>
-              <td>Default user is created After the signing up process</td>
-            </tr>
-            <tr>
-              <td>Admin User</td>
-              <td>Responsible for implementing and maintaining security services, such
-                as adding users, building profiles, or managing general site
-                administration
-                </td>
-            </tr>
-            <tr>
-              <td>Lab User</td>
-              <td>This is another existing user type. able to add strategies to the system
-                </td>
-            </tr>
-            <tr>
-              <td>Elite User</td>
-              <td>Auto execution subscribe and account balance 1000USDT</td>
-            </tr>
-            <tr>
-              <td>Pro User</td>
-              <td>Not defined yet</td>
-            </tr>
-            <tr>
-              <td>Pro + User</td>
-              <td>Not defined yet</td>
-            </tr>
-                
-         </table>
+         <div class="table-responsive">
+           <table class="table table-striped" role="table" aria-label="User types comparison">
+             <thead>
+               <tr>
+                 <th scope="col">User Type</th>
+                 <th scope="col">Description</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td><strong>Default User</strong></td>
+                 <td>Default user is created after the signing up process</td>
+               </tr>
+               <tr>
+                 <td><strong>Admin User</strong></td>
+                 <td>Responsible for implementing and maintaining security services, such as adding users, building profiles, or managing general site administration</td>
+               </tr>
+               <tr>
+                 <td><strong>Lab User</strong></td>
+                 <td>This is another existing user type. Able to add strategies to the system</td>
+               </tr>
+               <tr>
+                 <td><strong>Elite User</strong></td>
+                 <td>Auto execution subscribe and account balance 1000USDT</td>
+               </tr>
+               <tr>
+                 <td><strong>Pro User</strong></td>
+                 <td>Not defined yet</td>
+               </tr>
+               <tr>
+                 <td><strong>Pro + User</strong></td>
+                 <td>Not defined yet</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
          <br>
          <img
             src="assets/images/doc-images/UserTypes.png"
             class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
+            alt="User types interface showing different account levels and permissions"
+            loading="lazy"
           />
         </section>
 
@@ -508,7 +550,8 @@
         <img
             src="assets/images/doc-images/SighUp.png"
             class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
+            alt="Karbon sign-up form showing registration fields"
+            loading="lazy"
           />
 		 
           <p>After creating an account on Karbon, users are able to connect their online exchanges with
@@ -519,7 +562,8 @@
             <img
             src="assets/images/doc-images/Exchangers .png"
             class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
+            alt="Supported cryptocurrency exchanges including Bybit and Bitget"
+            loading="lazy"
           />
         </section>
 		
@@ -541,12 +585,14 @@
       <img
       src="assets/images/doc-images/HomePage.png"
       class="img-fluid mt-4 mb-3"
-      alt="Responsive image"
+      alt="Karbon home page interface showing welcome message and navigation"
+      loading="lazy"
       />
       <img
       src="assets/images/doc-images/HomePage2.png"
       class="img-fluid mt-4 mb-3"
-      alt="Responsive image"
+      alt="Karbon home page showing additional features and links"
+      loading="lazy"
       />
   
 		</section>
@@ -557,7 +603,7 @@
 		============================ -->
 		<section id="idocs_code">
 		  <h2>3.2.Color Theme Changing</h2>
-		  <p class="text-4">Site theme can be changed according to the user’s desire. Blue and Green colors are
+		  <p class="text-4">Site theme can be changed according to the user's desire. Blue and Green colors are
         available.</p>
       <img
       src="assets/images/doc-images/ColorChange.png"
@@ -682,8 +728,8 @@
           <section id="idocs_helper_classes">
             <h3>4.4.Create Your API Key on Bybit Subaccount</h3>
             <p>Step 1- enter your account's settings page. Perform a login if prompted. Alternatively, you
-              can click the human icon on the top right corner of your trading page, go to “Subaccounts”
-              then click “Management “in created sub account </p>
+              can click the human icon on the top right corner of your trading page, go to "Subaccounts"
+              then click "Management "in created sub account </p>
               <img
               src="assets/images/doc-images/APIImg1.png"
                class="img-fluid mt-4 mb-3"
@@ -706,8 +752,8 @@
               alt="Responsive image"
             />
             <p> Step 5- Enter 2FA code and confirm. You have successfully created your API key!</p>
-            <h4>“Users can add the IP address that was provided by the Karbon team to the API creation process to
-              prevent other unauthorized IP addresses.”</h4>
+            <h4>"Users can add the IP address that was provided by the Karbon team to the API creation process to
+              prevent other unauthorized IP addresses."</h4>
 
 			    </section>
         
@@ -727,7 +773,7 @@
             />
         <li>Step 3- After clicking transfer you can see a popup window named transfer.</li>
         <li>Step 4- Select across sub account(s)(no1)</li>
-        <li>Step 5- set your main account for “from” field, for “To” fields select user sub account derivative
+        <li>Step 5- set your main account for "from" field, for "To" fields select user sub account derivative
           account. (no2)</li>
         <li>Step 6- Select coin to USDT and set amount you need to transfer.</li>
         <li>Step 7- Click confirm to transfer funds</li>
@@ -1005,7 +1051,7 @@
                  alt="Responsive image"
                 /> 
        <h4>Manual Trade Currency Table</h4>
-      <p>In this section, you’ll find a trading currency table that provides 1-hour, 24-hour, and 7-day chart change values, along with volume and current currency prices.</p>
+      <p>In this section, you'll find a trading currency table that provides 1-hour, 24-hour, and 7-day chart change values, along with volume and current currency prices.</p>
         <img
                 src="assets\images\doc-images\currancytable.png"
                 class="img-fluid mt-4 mb-3"
@@ -1089,7 +1135,7 @@
             <!-- <li class="text_L font-weight-700">How Do You Want to Close Your Trade</li> -->
           
               <ul>
-                <li>the Default option is “Close My Trade by
+                <li>the Default option is "Close My Trade by
                    Profits Karbon Advanced Management</li>
                    <li>If this is selected "Wait for Close Signal for Trading View" trade is not running according to
                       the stages.</li>
@@ -1120,14 +1166,14 @@
                 <ul > 
                   <li class="text_L font-weight-500">Long</li>
                   <p>Maximum number of open long trades means, the user is not allowed to open the long
-                    trades more than the selected number. If the user tries to open more trades “Karbon
-                    blocked this trade due to a maximum number of running long trades” message will be
+                    trades more than the selected number. If the user tries to open more trades "Karbon
+                    blocked this trade due to a maximum number of running long trades" message will be
                     displayed
                     </p>
                   <li class="text_L font-weight-500">Short</li>
                   <p>Maximum number of open short trades means, the user is not allowed to open the short
-                    trades more than the selected number. If the user tries to open more trades “Karbon
-                    blocked this trade due to a maximum number of running short trades” message will be
+                    trades more than the selected number. If the user tries to open more trades "Karbon
+                    blocked this trade due to a maximum number of running short trades" message will be
                     displayed</p>
                 </ul>
 
@@ -1171,7 +1217,7 @@
                   <h4>8.7.Enable Trade Hedging</h4>
                   <p>In one-way mode, trade cannot be opened on both sides in the same currency. In hedge
                     mode, trades can be opened on both sides in the same currency. If Enable Trade Hedge in
-                    settings is “Yes” the hedge trade button will be visible.</p>
+                    settings is "Yes" the hedge trade button will be visible.</p>
                   <img
                         src="assets\images\doc-images\hedgemode.png"
                         class="img-fluid mt-4 mb-3"
@@ -1185,7 +1231,7 @@
                   <h4>8.8.Enable Trade Hedging</h4>
                   <p>In one-way mode, trade cannot be opened on both sides in the same currency. In hedge
                     mode, trades can be opened on both sides in the same currency. If Enable Trade Hedge in
-                    settings is “Yes” the hedge trade button will be visiblet</p>
+                    settings is "Yes" the hedge trade button will be visiblet</p>
                   <img
                         src="assets\images\doc-images\hedgemode.png"
                         class="img-fluid mt-4 mb-3"
@@ -1229,7 +1275,7 @@
                   </P>
                   <br>
                  
-                  <h5><b>Unlimited Reopen Trades Using the “Reopen Trade” Stage</b></h5>
+                  <h5><b>Unlimited Reopen Trades Using the "Reopen Trade" Stage</b></h5>
                   <P>If you need to run the reopen stage after every 100% close stage:
                     <ul>
                       <li>Include the reopen stage as the last stage.</li>
@@ -1301,7 +1347,9 @@
 
                 </section>
                 <hr class="divider">
-		
+
+      
+               
 		<!-- Advance Money Management Settings
 		============================ -->
     <section id="MM_Config">
@@ -1432,10 +1480,10 @@
         </section>
         <hr class="divider">
 
-        <!-- Hedge trade PnL cycle count 
+        <!-- Hedge trade PnL cycle count	
          ============================ -->
          <section id="MM_Hedge_all_close">
-          <h4>9.7.Hedge Trade All close </h4>
+          <h4>9.7.Hedge Trade All close	</h4>
           <p>This is a trade action type with a 100% close; users cannot set any stages after this stage set.
             and also it can be set in a combine mode, split mode, or positive and negative side.
              If the hedge trade hit this stage, both trades are closing at the moment.
@@ -1449,7 +1497,7 @@
         <hr class="divider">
 
         <section id="MM_Conv_Hedge">
-         <h4>9.8.Convert To Hedge </h4>
+         <h4>9.8.Convert To Hedge	</h4>
          <p>In the "Convert to Hedge" stage, a trade open signal is 
            triggered for the opposite side of the existing position. As a result, 
            both long and short trades are held on the same currency pair, which are then transitioned
@@ -1464,7 +1512,7 @@
        <hr class="divider">
 
        <section id="MM_Reopen_stg">
-         <h4>9.9.Trade Reopen Stage </h4>
+         <h4>9.9.Trade Reopen Stage	</h4>
          <p>
            The "Reopen Trade" stage initiates a new trade(either on the Long or Short side)based on a specified percentage of the previous trade's PnL.
             To configure this stage, a "100% Close Trade" stage must be set beforehand; without it,
@@ -1479,7 +1527,7 @@
 
 
        <section id="MM_Reopen_NewAcc">
-         <h4>9.10.Trade Reopen Stage (Another Account). </h4>
+         <h4>9.10.Trade Reopen Stage (Another Account).	</h4>
          <p>
            Similar to the "Reopen Stage" feature, instead of opening a new trade in the same account, 
            the "Reopen in Another Account" option allows triggering a trade signal in a different, 
@@ -1551,14 +1599,14 @@
 
          <hr class="divider">
 
-         <!-- Hedge trade PnL cycle count 
+         <!-- Hedge trade PnL cycle count	
          ============================ -->
          <section id="MM_PnL_Cycle">
-           <h4>9.13.Hedge trade PnL cycle count </h4>
+           <h4>9.13.Hedge trade PnL cycle count	</h4>
            <p>The user can define the cycle count by this setting; that means if a hedge trade is closed with a 
             profit (after user-defined stage using checkBox), it triggers a new hedge trade pair.
              The user can define using this setting how many times it needs to run; after the cycle count ends, 
-            no hedge trade is open for that pair. </p>
+            no hedge trade is open for that pair.	</p>
             <img
             src="assets\images\doc-images\cycleCount.png"
             class="img-fluid mt-4 mb-3"
@@ -1567,8 +1615,27 @@
          </section>
          <hr class="divider">
 
-         
-         <!-- Auto Trading 
+         <!--  Trailing stop loss
+         ============================ -->
+         <section id="MM_Trailing">
+           <h4>9.13.Trailing Stop-Loss</h4>
+           <p>A trailing stop-loss order is designed to protect profits by automatically adjusting the stop price as the market moves in your favor. It follows the highest price reached since the order's been placed, maintaining a dynamic stop level below the market price. If the price drops and reaches the stop price,
+             the sell order is triggered, and the position is closed at the prevailing market price.
+              Using a percentage as the trailing amount in a trailing stop allows a trader to adapt their exit strategy to the specific market conditions and volatility of the asset being traded. When setting a trailing stop with a percentage,
+              you specify the ratio by which the market price can retrace before triggering the stop loss.</p>
+            <img
+            src="assets\images\doc-images\Trailing.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+            <p>For example, if you enter a hypothetical long position on Bitcoin at $50,000 and set a trailing stop loss at 5%, the trailing stop will move up as the price increases. If the price reaches $60,000, the trailing stop amount would be set at $57,000 (5% below the peak price). If the price drops and reaches $57,000, the trailing stop is triggered, placing a sell order into the market, and your position is closed.
+Using a percentage as the trailing amount allows traders to maintain a dynamic approach to their exit strategy. By adjusting the percentage based on the asset's volatility and market conditions, traders can optimize their risk management and maximize potential profits.
+</p>
+
+         </section>
+         <hr class="divider">
+        
+         <!-- Auto Trading	
          ============================ -->
 
          <section id="MM_Auto">
@@ -1595,7 +1662,7 @@
            <P>
             AI Trading Algorithms are admin-configured strategies. Users can enable and run these algorithms by selecting their preferred ones.
             If a user is subscribed to an algorithm, whenever the admin triggers a signal for that specific algorithm, 
-            the user’s account will automatically execute a trade based on the admin-defined settings.
+            the user's account will automatically execute a trade based on the admin-defined settings.
             This feature is user-type based. The admin can define which user types are eligible to participate in specific strategies.
             </P>
          </section>
@@ -1616,10 +1683,10 @@
 
           <section id="MM_TV_AlertManual">
            <h4>10.03.Manual TV Alert Setup</h4>
-           <p>Manual TradingView Alerts allow users to integrate their own TradingView strategies directly with Karbon using a provided webhook URL and message body. Both must be added to TradingView for the connection to work. When TradingView triggers signals, Karbon will automatically execute them. Users can also define the strategy execution method in the “How do you want to close your trade” setting on the config page:
+           <p>Manual TradingView Alerts allow users to integrate their own TradingView strategies directly with Karbon using a provided webhook URL and message body. Both must be added to TradingView for the connection to work. When TradingView triggers signals, Karbon will automatically execute them. Users can also define the strategy execution method in the "How do you want to close your trade" setting on the config page:
             <Ul>
-            <li>Select “Wait for close signal from TradingView” if you want TradingView to manage the strategy fully.</li>
-           <li>Select “Close my trade by profits – Karbon Advanced Management” if you want Karbon’s Money Management stages to handle trade closures.</li>
+            <li>Select "Wait for close signal from TradingView" if you want TradingView to manage the strategy fully.</li>
+           <li>Select "Close my trade by profits – Karbon Advanced Management" if you want Karbon's Money Management stages to handle trade closures.</li>
           </Ul>           
             </p>
          </section>
@@ -1627,7 +1694,7 @@
          <hr class="divider">
 
 
-         <!-- Common errors 
+         <!-- Common errors	
          ============================ -->
          <section id="MM_Errors">
            <h3>11.0.Common Errors</h3>
@@ -1636,7 +1703,7 @@
 
          <hr class="divider">
 
-         <!-- Tracking Disabled errors 
+         <!-- Tracking Disabled errors	
          ============================ -->
          <section id="MM_Errors_Tracking_Disabled">
          <h3>11.1.Tracking Disabled errors </h3>
@@ -1692,7 +1759,7 @@
             the minimum close/open quantity in BTC is 0.001 BTC (tick size).
             that minimum close/open quantity is different for every pair. In this configuration, 
             the stage is set as 50% close, which is equal to 0.0005 BTC. In this scenario, 
-            bybit rounded the value to 0.001 because of tick size; in that case, trade is closed 100% from the bybit side. 
+            bybit rounded the value to 0.001 because of tick size; in that case, trade is closed 100% from the bybit side.	
             
           
           </p>
@@ -1792,8 +1859,14 @@
            <hr class="divider">
         
 
+        </section>  
+       
+        
+
+        
+
       </div>
-    </div>
+    </main>
 	
   </div>
   <!-- Content end --> 
@@ -1804,12 +1877,19 @@
   ============================ -->
   <footer id="footer" class="section bg-dark footer-text-light">
     <div class="container">
-      <!-- <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
-        <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
-      </ul> -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-2">
+            <strong>KARBON v4.1</strong> - Advanced Trading Platform Documentation
+          </p>
+          <p class="mb-0">
+            &copy; <span id="currentYear"></span> KARBON. All rights reserved.
+          </p>
+          <p class="small mt-2 text-muted">
+            This documentation is proprietary and confidential. Unauthorized reproduction or distribution is prohibited.
+          </p>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Footer end -->
@@ -1832,5 +1912,248 @@
 <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
 <!-- Custom Script -->
 <script src="assets/js/theme.js"></script>
+  <script>
+  (function() {
+    'use strict';
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const notification = document.getElementById("newFieldsNotification");
+      const closeBtn = notification.querySelector(".close-btn");
+
+      // Show notification on page load if not dismissed
+      if (!localStorage.getItem("newFieldsNotificationDismissed")) {
+        notification.classList.add("show");
+        
+        // Auto-hide notification after 10 seconds
+        setTimeout(() => {
+          if (notification.classList.contains("show")) {
+            notification.classList.add("hide");
+            setTimeout(() => {
+              notification.style.display = "none";
+            }, 500);
+          }
+        }, 10000); // 10 seconds
+      }
+
+      // Handle notification close button
+      closeBtn.addEventListener("click", function () {
+        notification.classList.add("hide");
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 500);
+        localStorage.setItem("newFieldsNotificationDismissed", "true");
+      });
+
+      // Handle smooth scrolling for notification links
+      document.querySelectorAll('.notification-popup a[href^="#"]').forEach(link => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href");
+          const target = document.querySelector(targetId);
+
+          if (target) {
+            const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
+            window.scrollTo({
+              top: target.offsetTop - headerHeight - 20,
+              behavior: "smooth"
+            });
+          }
+        });
+      });
+
+      // Add lazy loading to images that don't have it
+      const images = document.querySelectorAll('img:not([loading])');
+      images.forEach(img => {
+        if (img.src && !img.src.includes('logo')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+
+      // Add intersection observer for better performance
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.add('loaded');
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+
+      // Update copyright year
+      const currentYearElement = document.getElementById('currentYear');
+      if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+      }
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      const searchResults = document.getElementById('searchResults');
+      const mainSearchInput = document.getElementById('mainSearchInput');
+      const mainSearchBtn = document.getElementById('mainSearchBtn');
+      const mainSearchResults = document.getElementById('mainSearchResults');
+      
+      // Search data - extract content from the page
+      const searchData = [];
+      const sections = document.querySelectorAll('section[id]');
+      
+      sections.forEach(section => {
+        const title = section.querySelector('h1, h2, h3, h4, h5, h6');
+        const content = section.textContent || '';
+        const id = section.id;
+        
+        if (title && content) {
+          searchData.push({
+            id: id,
+            title: title.textContent.trim(),
+            content: content.replace(/\s+/g, ' ').trim(),
+            section: getSectionName(id)
+          });
+        }
+      });
+
+      function getSectionName(id) {
+        const sectionMap = {
+          'idocs_start': 'Introduction',
+          'idocs_installation': 'Purpose',
+          'idocs_html_structure': 'Trading',
+          'idocs_sass': 'Candlestick',
+          'idocs_color_schemes': 'Candle Indicator',
+          'idocs_theme_customization': 'How to Use Indicator',
+          'idocs_logo_settings': 'How Trading Works',
+          'idocs_layout': 'User Types & Sign Up',
+          'idocs_header': 'User Types',
+          'idocs_navbar': 'Sign Up',
+          'idocs_content': 'Home',
+          'idocs_typography': 'Welcome Message & Links',
+          'idocs_code': 'Color Theme Changing',
+          'idocs_components': 'Live/Paper Accounts',
+          'idocs_exaccs': 'Create Trading Account',
+          'DX_Dashboard': 'KarbonDX Dashboard',
+          'DX_Config': 'Configuration',
+          'MM_Config': 'Advance Money Management',
+          'MM_Auto': 'Auto Trading',
+          'MM_Errors': 'Common Errors',
+          'Demo_Trading': 'Demo Trading',
+          'DT_What_Is': 'Demo Trading',
+          'DT_Why': 'Demo Trading',
+          'DT_Setup': 'Demo Trading',
+          'DT_How_Trade': 'Demo Trading'
+        };
+        return sectionMap[id] || 'Documentation';
+      }
+
+      function highlightText(text, query) {
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span class="search-highlight">$1</span>');
+      }
+
+      function performSearch(query, resultsContainer) {
+        if (!query || query.length < 2) {
+          resultsContainer.classList.remove('show');
+          return;
+        }
+
+        const results = searchData.filter(item => 
+          item.title.toLowerCase().includes(query.toLowerCase()) ||
+          item.content.toLowerCase().includes(query.toLowerCase())
+        ).slice(0, 10); // Limit to 10 results
+
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<div class="no-results">No results found</div>';
+        } else {
+          resultsContainer.innerHTML = results.map(item => `
+            <div class="search-result-item" onclick="scrollToSection('${item.id}')">
+              <div class="search-result-title">${highlightText(item.title, query)}</div>
+              <div class="search-result-content">${highlightText(item.content.substring(0, 150), query)}...</div>
+              <div class="search-result-section">${item.section}</div>
+            </div>
+          `).join('');
+        }
+        
+        resultsContainer.classList.add('show');
+      }
+
+      function scrollToSection(sectionId) {
+        const target = document.getElementById(sectionId);
+        if (target) {
+          const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
+          const searchSectionHeight = document.querySelector('.search-section')?.offsetHeight || 0;
+          window.scrollTo({
+            top: target.offsetTop - headerHeight - searchSectionHeight - 20,
+            behavior: 'smooth'
+          });
+          searchResults.classList.remove('show');
+          mainSearchResults.classList.remove('show');
+          searchInput.value = '';
+          mainSearchInput.value = '';
+        }
+      }
+
+      // Make scrollToSection globally available
+      window.scrollToSection = scrollToSection;
+
+      // Header search event listeners
+      if (searchInput && searchBtn && searchResults) {
+        searchInput.addEventListener('input', (e) => {
+          performSearch(e.target.value, searchResults);
+        });
+
+        searchBtn.addEventListener('click', () => {
+          performSearch(searchInput.value, searchResults);
+        });
+
+        searchInput.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            performSearch(searchInput.value, searchResults);
+          }
+        });
+      }
+
+      // Main search event listeners
+      if (mainSearchInput && mainSearchBtn && mainSearchResults) {
+        mainSearchInput.addEventListener('input', (e) => {
+          performSearch(e.target.value, mainSearchResults);
+        });
+
+        mainSearchBtn.addEventListener('click', () => {
+          performSearch(mainSearchInput.value, mainSearchResults);
+        });
+
+        mainSearchInput.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            performSearch(mainSearchInput.value, mainSearchResults);
+          }
+        });
+      }
+
+      // Close search results when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container') && !e.target.closest('.search-box-container')) {
+          if (searchResults) searchResults.classList.remove('show');
+          if (mainSearchResults) mainSearchResults.classList.remove('show');
+        }
+      });
+
+      // Close search results on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (searchResults) searchResults.classList.remove('show');
+          if (mainSearchResults) mainSearchResults.classList.remove('show');
+          if (searchInput) searchInput.blur();
+          if (mainSearchInput) mainSearchInput.blur();
+        }
+      });
+    });
+  })();
+</script>  
 </body>
 </html>
