@@ -1,8 +1,8 @@
 /* Popup Notification Styles */
 .notification-popup {
   position: fixed;
-  top: 60px;
-  right: 20px;
+  top: 75px;
+  right: 14px;
   width: 20%;
   background-color: #1e202b;
   opacity: 0.88;
