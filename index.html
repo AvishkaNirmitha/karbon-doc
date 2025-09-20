@@ -50,7 +50,7 @@
 <!-- Notification Popup -->
 <div class="notification-popup" id="newFieldsNotification" role="alert" aria-live="polite">
   <button class="close-btn" aria-label="Close notification">&times;</button>
-  <p>New features added! Check out in Configurations <a class="nav-link active" href="#MM_Trailing" style="color: #fff; text-decoration: underline;">9.14 Trailing stop-loss</a> in Advance Money Management Settings.</p>
+  <p>New features added! Check out in Configurations <a class="nav-link active" href="#MM_Trailing" style="color: #fff; text-decoration: underline;">9.14 Trailing Take-Profit</a> in Advance Money Management Settings.</p>
 </div>
 <!-- Document Wrapper   
 =============================== -->
@@ -232,7 +232,7 @@
         <li class="nav-item"><a class="nav-link" href="#MM_Reset_Swing">9.11.Reset after Swing</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_Wallet_Cycles_at">9.12.End cycle at % gain</a></li>
         <li class="nav-item"><a class="nav-link" href="#MM_PnL_Cycle">9.13.Hedge trade PnL cycle count</a></li>
-        <li class="nav-item"><a class="nav-link" href="#MM_Trailing">9.14.Trailing stop-loss</a></li>
+        <li class="nav-item"><a class="nav-link" href="#MM_Trailing">9.14.Trailing Take-Profit</a></li>
        
       </ul>
     </li>
@@ -1397,7 +1397,7 @@
             <li>convert to Hedge</li>
             <li>reopen trades (Another Account)</li>
             <li>Close All Hedge trades</li>
-            <li>Trailing stop-loss</li>
+            <li>Trailing Take-Profit</li>
           </ul>
           <hr class="divider">
 
@@ -1619,17 +1619,17 @@
          <!--  Trailing stop loss
          ============================ -->
          <section id="MM_Trailing">
-           <h4>9.13.Trailing Stop-Loss</h4>
-           <p>A trailing stop-loss order is designed to protect profits by automatically adjusting the stop price as the market moves in your favor. It follows the highest price reached since the order's been placed, maintaining a dynamic stop level below the market price. If the price drops and reaches the stop price,
+           <h4>9.13.Trailing Take-Profit</h4>
+           <p>A trailing Take-Profit order is designed to protect profits by automatically adjusting the stop price as the market moves in your favor. It follows the highest price reached since the order's been placed, maintaining a dynamic stop level below the market price. If the price drops and reaches the stop price,
              the sell order is triggered, and the position is closed at the prevailing market price.
-              Using a percentage as the trailing amount in a trailing stop allows a trader to adapt their exit strategy to the specific market conditions and volatility of the asset being traded. When setting a trailing stop with a percentage,
-              you specify the ratio by which the market price can retrace before triggering the stop loss.</p>
+              Using a percentage as the trailing amount in a trailing Take-Profit allows a trader to adapt their exit strategy to the specific market conditions and volatility of the asset being traded. When setting a trailing Take-Profit with a percentage,
+              you specify the ratio by which the market price can retrace before triggering the Take-Profit.</p>
             <img
             src="assets\images\doc-images\Trailing.png"
             class="img-fluid mt-4 mb-3"
             alt="Responsive image"
             />
-            <p>For example, if you enter a hypothetical long position on Bitcoin at $50,000 and set a trailing stop loss at 5%, the trailing stop will move up as the price increases. If the price reaches $60,000, the trailing stop amount would be set at $57,000 (5% below the peak price). If the price drops and reaches $57,000, the trailing stop is triggered, placing a sell order into the market, and your position is closed.
+            <p>For example, if you enter a hypothetical long position on Bitcoin at $50,000 and set a trailing Take-Profit at 5%, the trailing Take-Profit will move up as the price increases. If the price reaches $60,000, the trailing Take-Profit amount would be set at $57,000 (5% below the peak price). If the price drops and reaches $57,000, the trailing Take-Profit is triggered, placing a sell order into the market, and your position is closed.
 Using a percentage as the trailing amount allows traders to maintain a dynamic approach to their exit strategy. By adjusting the percentage based on the asset's volatility and market conditions, traders can optimize their risk management and maximize potential profits.
 </p>
 
