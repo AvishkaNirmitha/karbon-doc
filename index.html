@@ -254,6 +254,7 @@
         <li class="nav-item"><a class="nav-link" href="#API_Error">11.04 API invalid Error</a></li>
         <li class="nav-item"><a class="nav-link" href="#conflict_TP">11.05 Conflicts In TP Orders</a></li>
         <li class="nav-item"><a class="nav-link" href="#balance_case">11.06 Available balance incorrect error </a></li>
+        <li class="nav-item"><a class="nav-link" href="#TP_Recreate">11.0 TTP/TPs in pause trades  </a></li>
       </ul>
     </li>
 
@@ -1814,7 +1815,7 @@ Using a percentage as the trailing amount allows traders to maintain a dynamic a
             <b>Why Partial TP Hits First?</b>: If the price moves quickly in your favor, it may cross the ROI threshold (Partial TP) before pausing or retracing to hit the tight price-based Repurchase TP.
           </p>
           
-        <b>example</b><br>
+          <b>example</b><br>
                 latest entry=100,partial close at 0.5%, leverage 20x<br>
                 Repurchase TP creating (based on Trigger Price) at 100.1 .<br>
                 partial close TP creating (based on ROI) at 100.02 .
@@ -1847,9 +1848,29 @@ Using a percentage as the trailing amount allows traders to maintain a dynamic a
 
            </section>  
            <hr class="divider">
-        
+
+
+            <section id="TP_Recreate">
+          <h3>11.7. Available balance incorrect error. </h3>
+          <p>
+            In Karbon, there is a program that can recreate deleted TP/TTP orders. In rare cases, 
+            if you try to pause a trade at the same time the program runs, 
+            the trade may pause in Karbon but a new TP/TTP gets created.
+            If you notice TP/TTP orders still active on Bybit for a trade that is paused in Karbon,
+            please delete those TP/TTP orders manually or resume the trade and try pausing it again.
+
+
+          </p>
+             
+          
+
+           </section>  
+           <hr class="divider">
+
 
         </section>  
+
+        
        
         
 
