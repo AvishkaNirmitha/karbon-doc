@@ -1832,29 +1832,18 @@ Using a percentage as the trailing amount allows traders to maintain a dynamic a
          ============================ -->
            <section id="balance_case">
           <h3>11.6. Available balance incorrect error. </h3>
+          <p>
+            If you notice a slight difference in your account balance (available or total) in the Karbon system,
+             it’s because the API we use retrieves wallet balances in USD instead of USDT.
+              On Bybit, balances such as account margin and available funds are shown in USDT, while in Karbon they appear in USD. 
+              This may cause a small variation between the two.
+
+            for an example ,if your Bybit balance is 100 USDT and the USD/USDT rate is 1.001, Karbon may show it as 100.1 USD. 
+            This small conversion difference is normal and comes from the way the API fetches wallet balances.
+
+          </p>
+             
           
-            <b>Error -</b>Available balance is grater than Account Balance 
-             <img
-            src="./assets/images/doc-images/Balanceerror.png"
-            class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
-            />
-            <br>
-            <b>reason -</b>
-                  If an API key is created without enabling the "Assets" permission, 
-                   the available balance may incorrectly display the combined total of USDT and USDC,
-                  while the actual account balance only reflects the USDT amount.
-              <P>
-                <b>solution - </b>
-                To prevent this mismatch, please ensure that the "Assets" permission is enabled when generating API keys.
-                
-              </P>
-            <br>
-            <img
-            src="./assets/images/doc-images/APIerrorimg.png"
-            class="img-fluid mt-4 mb-3"
-            alt="Responsive image"
-            />
 
            </section>  
            <hr class="divider">
