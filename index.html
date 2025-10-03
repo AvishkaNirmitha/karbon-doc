@@ -254,7 +254,9 @@
         <li class="nav-item"><a class="nav-link" href="#API_Error">11.04 API invalid Error</a></li>
         <li class="nav-item"><a class="nav-link" href="#conflict_TP">11.05 Conflicts In TP Orders</a></li>
         <li class="nav-item"><a class="nav-link" href="#balance_case">11.06 Available balance incorrect error </a></li>
-        <li class="nav-item"><a class="nav-link" href="#TP_Recreate">11.0 TTP/TPs in pause trades  </a></li>
+        <li class="nav-item"><a class="nav-link" href="#TP_Recreate">11.07 TTP/TPs in pause trades  </a></li>
+        <li class="nav-item"><a class="nav-link" href="#Bitget_OpenError">11.08 Assest  Mode Conflict In Bitget.  </a></li>
+        
       </ul>
     </li>
 
@@ -1863,7 +1865,7 @@
 
 
             <section id="TP_Recreate">
-          <h3>11.7. Available balance incorrect error. </h3>
+          <h3>11.07. Available balance incorrect error. </h3>
           <p>
             In Karbon, there is a program that can recreate deleted TP/TTP orders. In rare cases, 
             if you try to pause a trade at the same time the program runs, 
@@ -1879,10 +1881,42 @@
            </section>  
            <hr class="divider">
 
+            <section id="Bitget_OpenError">
+          <h3>11.08. Assest  Mode Conflict In Bitget. </h3>
+          
+        <p>When trading on Bitget, if your account is set to Multi-Asset Mode, you cannot open trades in Isolated Margin. 
+          This is because Multi-Asset Mode automatically pools all available assets together to calculate margin,
+           meaning individual positions cannot be managed separately.
+              To maintain control over each position and use Isolated Margin, 
+              you should use Single Asset Mode only. Single Asset Mode ensures that margin is allocated per asset, 
+              giving you precise control over risk and position sizing.
+              Additionally, using Single Asset Mode is necessary for Karbon AI to function properly, 
+              as it relies on it to manage trades accurately.
+            </p>
+            <p>To Change Asset Mode --: Bitget(platform side)-> Settings -> Under Delivery And Perpetual ->  Margin mode -> Multi Assets Margin Mode to Single Assets Margin Mode</p>
 
+             <img
+            src="assets\images\doc-images\BitgetConflict1.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+            <img
+            src="assets\images\doc-images\BitgetConflict2.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+            <img
+            src="assets\images\doc-images\BitgetConflict3.png"
+            class="img-fluid mt-4 mb-3"
+            alt="Responsive image"
+            />
+
+            
+            </section>  
         </section>  
 
-        
+
+         
        
         
 
