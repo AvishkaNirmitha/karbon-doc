@@ -1628,19 +1628,24 @@
             />
 
             <p>
-              <h4>Combined Close</h4>
+              <h4>Combined Profit</h4>
               <p>
                 This add-on is related to the wallet-gain process when running multiple hedge trades.
                     Assume you open hedge trades using two or more pairs and set the wallet-gain target to 5%.
                     <ul>
-                      <li>If Combine Close is OFF:
+                      <li>If Combine Profit is OFF:
                     The wallet-gain percentage is calculated per pair. Each pair must individually reach 5% gain. When a pair meets the profit requirement, only that specific pair will close.</li>
-                    <li>If Combine Close is ON:
+                    <li>If Combine Profit is ON:
                     The wallet-gain percentage is calculated using the combined profit of all hedge trades in the group (two or more pairs).
                     Once the total profit across the group reaches the required 5% gain, all hedge-trade pairs will close together.</li>
                     </ul>
                   </p>
             </p>
+                  <img
+                  src="assets\images\doc-images\combine_close.png"
+                  class="img-fluid mt-4 mb-3"
+                  alt="Responsive image"
+                  />
          </section>
 
          <hr class="divider">
