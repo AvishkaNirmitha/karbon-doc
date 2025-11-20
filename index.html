@@ -95,6 +95,7 @@
           </div>
           <div id="searchResults" class="search-results"></div>
         </div>
+        <a href="/blogs" class="btn btn-outline-primary ml-3" target="_blank" rel="noopener" aria-label="Open Blogs in new tab">Blogs</a>
         <!-- Search Box End -->
         
         <!-- Logo End -->
@@ -158,7 +159,7 @@
 			    <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#idocs_typography">3.1.Welcome Message & Links</a></li>
             <li class="nav-item"><a class="nav-link" href="#idocs_code">3.2.Color Theme Changing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_components">3.3.Live / Paper accounts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_components">3.3.Accounts</a></li>
           </ul>
 		    </li>
         <li class="nav-item"><a class="nav-link" href="#idocs_exaccs">Create Trading Account In Exchangers.</a>
@@ -260,6 +261,15 @@
       </ul>
     </li>
 
+    <li class="nav-item"><a class="nav-link" href="#MM_Demo">Demo Trading. </a>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#MM_Demo_Create">12.01.Create Demo Trading Account</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Demo_API">12.02. Create Demo API</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Demo_funding">12.03 Get Funds For Demo Account</a></li>
+       
+        
+      </ul>
+    </li>
    
 
     
@@ -625,7 +635,7 @@
         <!-- Components
 		============================ -->
         <section id="idocs_components">
-          <h2>3.3.Live/Paper Accounts</h2>
+          <h2>3.3.Accounts</h2>
           <img
           src="assets/images/doc-images/LivePaperAcc.png"
           class="img-fluid mt-4 mb-3"
@@ -1510,7 +1520,16 @@
            triggered for the opposite side of the existing position. As a result, 
            both long and short trades are held on the same currency pair, which are then transitioned
            into a hedged state. Make sure to configure the trade value or
-            percentage—based on your basic settings—to determine the position size of the opposite trade.</p>
+            percentage—based on your basic settings—to determine the position size of the opposite trade.</p><p>
+          Conditions to be Hedge
+              <ol>          <li> Split Mode</li> 
+              <ul><li>LabUser && Trade Hedgeing = Yes </li></ul>
+            
+                <li>Combine</li>
+            <ul><li>LabUser && Trade Hedgeing = Yes</li></ul>
+          </ol>
+
+          </p>
           <img
           src="assets\images\doc-images\Conv_hedge.png"
           class="img-fluid mt-4 mb-3"
@@ -1607,6 +1626,21 @@
             class="img-fluid mt-4 mb-3"
             alt="Responsive image"
             />
+
+            <p>
+              <h4>Combined Close</h4>
+              <p>
+                This add-on is related to the wallet-gain process when running multiple hedge trades.
+                    Assume you open hedge trades using two or more pairs and set the wallet-gain target to 5%.
+                    <ul>
+                      <li>If Combine Close is OFF:
+                    The wallet-gain percentage is calculated per pair. Each pair must individually reach 5% gain. When a pair meets the profit requirement, only that specific pair will close.</li>
+                    <li>If Combine Close is ON:
+                    The wallet-gain percentage is calculated using the combined profit of all hedge trades in the group (two or more pairs).
+                    Once the total profit across the group reaches the required 5% gain, all hedge-trade pairs will close together.</li>
+                    </ul>
+                  </p>
+            </p>
          </section>
 
          <hr class="divider">
@@ -1913,7 +1947,72 @@
 
             
             </section>  
-        </section>  
+
+             <!-- Demo Trading	
+         ============================ -->
+         <section id="MM_Demo">
+           <h3>12.0. Demo Trading</h3>
+           <p>Bybit Demo Trading offers a simulated environment that mirrors real market conditions, 
+            allowing users to practice trading without risking real funds. This feature comes as a simulated Unified Trading Account (UTA), which is automatically created for every user upon signing up with Bybit.
+             The UTA provides an all-in-one account setup, enabling seamless trading across Bybit’s core products with a single click.</p>
+         </section>
+
+         <hr class="divider">
+         
+         <section id="MM_Demo_Create">
+           <h3>12.01.Create Demo Trading Account</h3>
+           <p>To use Bybit/bitget Demo Trading, start by creating a Bybit/bitget account if you haven’t already.
+             After setting up your main account, go to Bybit’s 
+             homepage and click the Demo Trading button located either at the top-left corner or in the center of the page.
+              You’ll be directed to the Demo Trading introduction page — simply click Start Now to continue.
+            In the Bitget, go to the Features section in the navigation bar and select Demo Trading.</p>
+         </section>
+
+         <hr class="divider">
+
+         <section id="Demo_API">
+           <h3>12.02. Create Demo API</h3>
+           <p>Here’s how to create the API key within the demo environment:
+            <ul>
+              <li>go to API Management.(from profile icon)</li>
+              <li>Click which says “Create New Key” in the API Management page.</li>
+              <li>Click system-generated API keys.</li>
+              <li>The following pop-out window will appear. Please configure your API key according to your trading needs.</li>
+               <img
+            src="assets/images/doc-images/ApiImg2.png"
+             class="img-fluid mt-4 mb-3"
+              alt="Responsive image"
+            />
+            <li>Enter 2FA code and confirm. You have successfully created your API key!</li>
+            </ul>
+              
+           </p>
+         </section>
+
+         <hr class="divider">
+
+          <section id="Demo_funding">
+           <h3>12.03 Get Funds For Demo Account</h3>
+           <p>
+            Hover over Assets in the top-right menu and select Unified Trading Account.
+            A pop-up window will appear, welcoming you to your demo Unified Trading Account. 
+            It provides an overview of the available trading options, such as Spot Trading and Derivatives Trading using USDT Perpetuals, 
+            USDC Perpetuals, and USDC Options. Click Done to continue.
+            </p>           
+            <p>
+              You’ll then see your Demo UTA main screen, which displays your total balance, margin balance,
+            and individual asset balances — including demo funds for USDT, USDC, BTC, and ETH. From this dashboard, 
+            you can manage account settings such as adding or reducing demo funds and enabling or disabling the collateral option for specific assets.
+            </p> 
+            <p>
+            To modify demo funds for particular coins, click Adjust Demo Funds in the top-right corner. 
+            To enable or disable collateral usage, use the toggle switches under the Used As Collateral column.
+            </p>
+         </section>
+
+         <hr class="divider">
+
+      </section>
 
 
          
