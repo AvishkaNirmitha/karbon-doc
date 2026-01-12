@@ -647,7 +647,7 @@ hr {
 /*  3. Layouts
 /* =================================== */
 #main-wrapper {
-  background: #fff;
+  background: #000000;
 }
 
 .box #main-wrapper {
@@ -838,8 +838,8 @@ hr {
   -webkit-box-ordinal-group: 0;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  background: #fff;
-  border-bottom: 1px solid #efefef;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
 }
 .primary-menu.bg-transparent {
   position: absolute;
