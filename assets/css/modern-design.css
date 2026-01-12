@@ -301,3 +301,67 @@ code {
     background: rgba(59, 130, 246, 0.3);
     color: #fff;
 }
+
+/* 6. Mobile Search Styles */
+#mobileSearchToggle {
+    color: var(--color-text-main);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    border: none;
+    background: transparent;
+}
+
+#mobileSearchToggle:hover,
+#mobileSearchToggle:active {
+    color: var(--color-accent);
+}
+
+@media (max-width: 991.98px) {
+    .search-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--color-bg-card); /* Match card/header bg */
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        z-index: 1000;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .search-container.show {
+        display: block;
+        animation: slideDown 0.2s ease-out;
+    }
+
+    .search-container .input-group {
+        max-width: 100%;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 7. Mobile Content Alignment & Gap Fix */
+@media (max-width: 991.98px) {
+    .idocs-content p,
+    .idocs-content li {
+        text-align: justify;
+    }
+
+    .idocs-content {
+        padding-left: 0 !important;
+    }
+}

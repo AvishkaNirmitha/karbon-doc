@@ -159,4 +159,23 @@ $('#back-to-top').on("click", function() {
 });
 
 
+/*------------------------
+   Mobile Search Toggle
+-------------------------- */
+$('#mobileSearchToggle').on('click', function(e) {
+    e.stopPropagation();
+    $('.search-container').toggleClass('show');
+    if ($('.search-container').hasClass('show')) {
+        setTimeout(function() {
+            $('#searchInput').focus();
+        }, 100);
+    }
+});
+
+$(document).on('click', function(e) {
+    if (!$(e.target).closest('.search-container').length && !$(e.target).closest('#mobileSearchToggle').length) {
+        $('.search-container').removeClass('show');
+    }
+});
+
 })(jQuery)

@@ -53,10 +53,21 @@
 </div>
 <!-- Preloader End --> 
 <!-- Notification Popup -->
+<!-- Notification Popup -->
 <div class="notification-popup" id="newFieldsNotification" role="alert" aria-live="polite">
-  <button class="close-btn" aria-label="Close notification">&times;</button>
-  <p>New features added! Check out in Configurations <a class="nav-link active" href="#MM_Trailing" style="color: #fff; text-decoration: underline;">9.14 Trailing Take-Profit</a>
-    <a class="nav-link active" href="#MM_Demo" style="color: #fff; text-decoration: underline;">12.0. Demo Trading</a> </p>
+  <div class="notification-content">
+    <div class="notification-icon">
+      <i class="fas fa-bell"></i>
+    </div>
+    <div class="notification-text">
+        <h5 class="notification-title">What's New</h5>
+        <p>
+            <a class="nav-link active" href="#MM_Trailing">9.14 Trailing Take-Profit</a>
+            <a class="nav-link active" href="#MM_Demo">12.0. Demo Trading</a> 
+        </p>
+    </div>
+    <button class="close-btn" aria-label="Close notification"><i class="fas fa-times"></i></button>
+  </div>
 </div>
 <!-- Document Wrapper   
 =============================== -->
@@ -74,6 +85,7 @@
           <span class="w-75"></span>
           <span class="w-50"></span>
         </button>
+
         
         <!-- Logo -->
         <a class="logo ml-md-3" href="index.html" title="Karbon Documentation">
@@ -88,6 +100,11 @@
         </a>
         
         <span class="ml-2 mr-auto text-2"><strong style="font-size:20px">KARBON</strong> v4.1</span>
+
+        <!-- Mobile Search Toggle -->
+        <button class="btn btn-link d-lg-none mr-2" type="button" id="mobileSearchToggle" aria-label="Toggle search">
+            <i class="fas fa-search"></i>
+        </button>
         
         <!-- Search Box -->
         <div class="search-container ml-3">
@@ -101,7 +118,7 @@
           </div>
           <div id="searchResults" class="search-results"></div>
         </div>
-        <!-- <a href="/blogs" class="btn btn-outline-primary ml-3" target="_blank" rel="noopener" aria-label="Open Blogs in new tab">Blogs</a> -->
+
         <!-- Search Box End -->
         
         <!-- Logo End -->
@@ -156,9 +173,7 @@
           <ul class="nav flex-column">
 			<li class="nav-item"><a class="nav-link" href="#idocs_header">2.1.User Type</a></li>
 			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">2.2.Sign Up</a></li>
-			<!-- <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li> -->
+
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#idocs_content">Home</a>
@@ -290,42 +305,7 @@
         <section id="idocs_start">
           <h1>Introduction</h1>
           <p class="lead">Welcome to the Karbon trading platform documentation. This guide will help you understand and configure all features of the platform.</p>
-          <!-- <h2>Your ThemeForest Item Name Here</h2>
-          <p class="lead">
-            Thank you so much for purchasing our item from themeforest.
-          </p>
-          <hr />
-          <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <ul class="list-unstyled">
-                <li><strong>Version:</strong> 1.0</li>
-                <li>
-                  <strong>Author:</strong>
-                  <a href="http://www.harnishdesign.net" target="_blank"
-                    >Harnish Design</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <ul class="list-unstyled">
-                <li>
-                  <strong class="font-weight-700">Created:</strong> 8 April,
-                  2020
-                </li>
-                <li><strong>Update:</strong> 12 May, 2020</li>
-              </ul>
-            </div>
-          </div>
-          <p class="alert alert-info">
-            If you have any questions that are beyond the scope of this help
-            file, Please feel free to email via
-            <a
-              target="_blank"
-              href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign"
-              >Item Support Page</a
-            >.
-          </p> -->
+
         </section>
 
         
@@ -913,7 +893,7 @@
 		<section id="idocs_faq">
       <h2>6.0.Connect Accounts to Karbon </h2>
       <h4>Users can create a new account by providing the necessary information.</h4>
-      <!-- <li type="1" class="text_L">Create new account</li> -->
+
     </section>
 
     <section id="idocs_con">
