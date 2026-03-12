@@ -51,7 +51,7 @@ a:hover {
   text-decoration: none;
 }
 
-p {
+p, li {
   color: var(--color-text-muted);
 }
 

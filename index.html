@@ -52,7 +52,7 @@
   <div class="lds-ellipsis" aria-hidden="true"></div>
 </div>
 <!-- Preloader End --> 
-<!-- Notification Popup -->
+
 <!-- Notification Popup -->
 <div class="notification-popup" id="newFieldsNotification" role="alert" aria-live="polite">
   <div class="notification-content">
@@ -62,8 +62,8 @@
     <div class="notification-text">
         <h5 class="notification-title">What's New</h5>
         <p>
-            <a class="nav-link active" href="#MM_Trailing">9.14 Trailing Take-Profit</a>
-            <a class="nav-link active" href="#MM_Demo">12.0. Demo Trading</a> 
+            <a class="nav-link active" href="#wallet_system">13.0 Wallet System</a>
+            <a class="nav-link active" href="#unstaking_kbn">13.09 Unstaking KBN</a> 
         </p>
     </div>
     <button class="close-btn" aria-label="Close notification"><i class="fas fa-times"></i></button>
@@ -207,8 +207,8 @@
 		<li class="nav-item"><a class="nav-link" href="#idocs_faq">Connect Accounts to Karbon</a>
     
      <ul class="nav flex-column">
-      <li class="nav-item"><a class="nav-link" href="#idocs_con">6.1.Connect account</a>
-      </li>
+      <li class="nav-item"><a class="nav-link" href="#idocs_con">6.1.Connect account</a></li>
+      <li class="nav-item"><a class="nav-link" href="#account_types">6.2. Account Types</a></li>
       </ul>
     </li>
 
@@ -290,8 +290,20 @@
        
         
       </ul>
+    <li class="nav-item"><a class="nav-link" href="#wallet_system">Wallet System</a>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#wallet_page">13.01 Wallet Page (Trading Wallet)</a></li>
+        <li class="nav-item"><a class="nav-link" href="#swap_feature">13.02 Swap Feature</a></li>
+        <li class="nav-item"><a class="nav-link" href="#withdrawals_trading">13.03 Withdrawals from Trading Wallet</a></li>
+        <li class="nav-item"><a class="nav-link" href="#holding_wallet">13.04 Holding Wallet Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#staking_wallet">13.05 Staking Wallet Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#what_is_staking">13.06 What is KBN Staking</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how_staking_works">13.07 How Staking Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how_to_stake">13.08 How to Stake KBN</a></li>
+        <li class="nav-item"><a class="nav-link" href="#unstaking_kbn">13.09 Unstaking KBN</a></li>
+        <li class="nav-item"><a class="nav-link" href="#withdraw_rewards">13.10 How to Withdraw Staking Rewards</a></li>
+      </ul>
     </li>
-   
 
     
     </nav>
@@ -916,6 +928,77 @@
              class="img-fluid mt-4 mb-3"
               alt="Responsive image"
             />
+
+        <hr class="divider">
+        </section>
+        
+        <section id="account_types">
+        <h2>6.2. Account Types</h2>
+        <p>Karbon provides two different trading account models, designed to support both strategy-driven traders and users who prefer fully automated trading systems.</p>
+        <p>When creating a new account, users can choose between the following account types:</p>
+        <ul>
+          <li>KAAT (Karbon AI Automated Trading)</li>
+          <li>Infinity Trading</li>
+        </ul>
+        <p>Each model provides a different level of control and automation.</p>
+
+        <h4 id="kaat">KAAT – Karbon AI Automated Trading</h4>
+        <p>KAAT accounts are designed for users who want greater control over their trading strategies while still benefiting from Karbon’s automation tools.</p>
+        <p>This model supports manual-assisted trading, where users can configure strategies and integrate external algorithmic signals.</p>
+        
+        <h5>Key Features</h5>
+        <ul>
+          <li>Configure custom trading strategies</li>
+          <li>Manual-assisted trading environment</li>
+          <li>Ability to use TradingView algorithms</li>
+          <li>Live ongoing AI training and strategy optimization</li>
+          <li>Trades executed using Karbon Coin (KBN)</li>
+          <li>Advanced money management configurations</li>
+          <li>Greater flexibility for experienced traders</li>
+        </ul>
+        <p>KAAT accounts are ideal for users who want to actively participate in trading strategy design while leveraging Karbon’s automation capabilities.</p>
+
+        <h4 id="infinity_trading">Infinity Trading</h4>
+        <p>Infinity Trading accounts provide a fully managed trading system powered by KarbonAI algorithms.</p>
+        <p>This model is designed for users who prefer a hands-free trading experience.</p>
+        
+        <h5>Key Features</h5>
+        <ul>
+          <li>Karbon-managed trading system</li>
+          <li>Simple subscription-based access</li>
+          <li>Demo environment available for testing</li>
+          <li>Powered by advanced KarbonAI algorithms</li>
+          <li>Set-and-forget trading system</li>
+          <li>Fully automated execution and management</li>
+        </ul>
+        <p>Infinity Trading is designed to be the most hands-free trading system available within the Karbon ecosystem, allowing users to participate in trading without needing to configure strategies themselves.</p>
+
+        <h5>Choosing an Account Type</h5>
+        <div class="table-responsive">
+          <table class="table table-striped" role="table" aria-label="Account types comparison">
+            <thead>
+              <tr>
+                <th scope="col">Account Type</th>
+                <th scope="col">Best For</th>
+                <th scope="col">Control Level</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr>
+                <td><strong>KAAT</strong></td>
+                <td>Strategy builders and algorithm users</td>
+                <td>High control</td>
+              </tr>
+              <tr>
+                <td><strong>Infinity Trading</strong></td>
+                <td>Users who prefer automated trading</td>
+                <td>Fully automated</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Both account types operate within the Karbon ecosystem and can interact with the platform’s wallet and staking system.</p>
+
         </section>
         
 		<hr class="divider">
@@ -1987,6 +2070,159 @@
 
          <hr class="divider">
 
+        <!-- Wallet System
+        ============================ -->
+        <section id="wallet_system">
+          <h2>13.0 Wallet System</h2>
+          <p class="lead">Karbon uses a multi-wallet system to separate trading activities, token holding, and staking operations. This structure ensures clear asset management, security, and proper reward distribution across the platform. The main wallet-related pages in Karbon are: Wallet Page (Trading Wallet) Holding Wallet Page Staking Wallet Page Each wallet serves a different role within the Karbon ecosystem.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="wallet_page">
+          <h3>13.01 Wallet Page (Trading Wallet)</h3>
+          <p>The Wallet Page, also known as the Trading Wallet, is where users interact with the trading system and manage their KBN purchases. This wallet allows users to buy KBN tokens using USDC on the Polygon network and manage trading-related balances.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="swap_feature">
+          <h3>13.02 Swap Feature</h3>
+          <p>The Trading Wallet includes a swap feature that allows users to convert USDC to KBN tokens.</p>
+          <h4>How to Buy KBN</h4>
+          <ol>
+            <li>Go to the Wallet Page.</li>
+            <li>Enter the amount of USDC you want to swap.</li>
+            <li>Click the Buy KBN Token button.</li>
+            <li>The platform will open a MetaMask Web3 confirmation window.</li>
+            <li>Confirm the transaction using your MetaMask wallet.</li>
+            <li>After blockchain confirmation, the purchased KBN tokens will appear in the Trading Wallet.</li>
+          </ol>
+          <p>This swap mechanism is directly integrated with the MetaMask wallet to securely process transactions on the Polygon network.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="withdrawals_trading">
+          <h3>13.03 Withdrawals from Trading Wallet</h3>
+          <p>Users can withdraw their assets directly from the Wallet Page. When withdrawing KBN, The system will automatically convert KBN to USDC. The USDC will then be sent through the Polygon network to the user’s wallet address.</p>
+          <h4>Withdrawal Steps</h4>
+          <ol>
+            <li>Go to the Wallet Page.</li>
+            <li>Click the Withdraw button.</li>
+            <li>Enter the withdrawal amount.</li>
+            <li>Enter your Polygon wallet address.</li>
+            <li>Confirm the withdrawal request.</li>
+          </ol>
+          <p>The system will convert KBN → USDC and process the withdrawal through the Polygon network.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="holding_wallet">
+          <h3>13.04 Holding Wallet Page</h3>
+          <p>The Holding Wallet Page is designed for secure storage of KBN tokens. Tokens moved into the Holding Wallet are separated from trading operations, making them safe for long-term holding or staking.</p>
+          <ul>
+            <li><strong>Key Functions:</strong> The Holding Wallet allows users to: Store KBN tokens safely Transfer KBN between wallets Stake KBN tokens Manage staking participation</li>
+            <li><strong>Protection from Trading Fees:</strong> Karbon only deducts trading-related KBN fees from the Trading Wallet. KBN tokens stored in the Holding Wallet are not used for trading activities and are not subject to trading fee deductions. This ensures that tokens placed in the Holding Wallet remain secure and unaffected by trading operations.</li>
+          </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section id="staking_wallet">
+          <h3>13.05 Staking Wallet Page</h3>
+          <p>The Staking Wallet Page displays the user’s active staking balance and reward earnings. When users stake KBN tokens from their Holding Wallet, those tokens become part of the staking pool and are tracked within the staking interface. The Staking Wallet shows: Total staked KBN Staking tier level Earned rewards Withdrawal history</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="what_is_staking">
+          <h3>13.06 What is KBN Staking</h3>
+          <p>KBN staking allows users to earn a share of the fee revenue generated by the Karbon platform. When users stake their KBN tokens, they participate in the Karbon reward pool, which distributes a portion of the trading fees generated across the entire Karbon system. This means that KBN holders can earn passive rewards simply by staking their tokens.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="how_staking_works">
+          <h3>13.07 How Staking Works</h3>
+          <ol>
+            <li>Users transfer KBN tokens to the Holding Wallet.</li>
+            <li>From the Holding Wallet, users can stake their KBN tokens.</li>
+            <li>The tokens enter the Karbon staking pool.</li>
+            <li>The system collects trading fees generated by Karbon operations.</li>
+            <li>A portion of these fees is distributed to KBN stakers.</li>
+            <li>Rewards are distributed automatically every 24 hours.</li>
+          </ol>
+        </section>
+
+        <hr class="divider">
+
+        <section id="how_to_stake">
+          <h3>13.08 How to Stake KBN</h3>
+          <ol>
+            <li>Navigate to the Holding Wallet Page.</li>
+            <li>Open the Staking Tab.</li>
+            <li>Click the Stake button.</li>
+            <li>Enter the amount of KBN tokens you want to stake.</li>
+            <li>Confirm the staking request.</li>
+          </ol>
+          <p>Once confirmed, the tokens will be added to the staking pool and will begin earning rewards.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="unstaking_kbn">
+          <h3>13.09 Unstaking KBN</h3>
+          <p>Karbon allows users to unstake their KBN tokens when they want to remove tokens from the staking pool.</p>
+          <p>When tokens are unstaked, they will be returned to the Holding Wallet after a 24-hour unstaking period.</p>
+          <p>During this period, the tokens are locked in the unstaking process and will not earn staking rewards.</p>
+          
+          <h4>How to Unstake KBN</h4>
+          <ol>
+            <li>Navigate to the Holding Wallet Page.</li>
+            <li>Open the Staking Tab.</li>
+            <li>Click the Unstake button.</li>
+            <li>Enter the amount of KBN tokens you want to unstake.</li>
+            <li>Confirm the unstaking request.</li>
+          </ol>
+          
+          <h4>Unstaking Period</h4>
+          <p>After confirming the unstake request:</p>
+          <ul>
+            <li>The tokens enter a 24-hour unstaking period.</li>
+            <li>During this time, the tokens are temporarily locked.</li>
+            <li>Tokens in the unstaking period do not receive staking rewards.</li>
+            <li>Once the 24-hour period is completed, the tokens will automatically become available in the Holding Wallet balance.</li>
+          </ul>
+          
+          <h4>Important Notes</h4>
+          <p>Only actively staked tokens are eligible for reward distribution.</p>
+          <p>Tokens in the unstaking period will not earn rewards.</p>
+          <p>After the unstaking period, users can:</p>
+          <ul>
+            <li>Hold the tokens in the Holding Wallet</li>
+            <li>Transfer them back to the Trading Wallet</li>
+            <li>Stake them again if desired.</li>
+          </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section id="withdraw_rewards">
+          <h3>13.10 How to Withdraw Staking Rewards</h3>
+          <p>Users can withdraw their accumulated staking rewards directly from the Staking Wallet Page. Rewards are paid in USDC through the Polygon network.</p>
+          <h4>Withdrawal Steps</h4>
+          <ol>
+            <li>Go to the Staking Wallet Page.</li>
+            <li>Click the Withdraw button.</li>
+            <li>Complete 2FA verification (2FA must be enabled).</li>
+            <li>Enter the Polygon wallet address.</li>
+            <li>Enter the withdrawal amount.</li>
+            <li>Submit the withdrawal request.</li>
+          </ol>
+        </section>
+
       </section>
 
 
@@ -2167,11 +2403,27 @@
           'idocs_code': 'Color Theme Changing',
           'idocs_components': 'Live/Paper Accounts',
           'idocs_exaccs': 'Create Trading Account',
+          'idocs_con': 'Connect Accounts to Karbon',
+          'account_types': 'Connect Accounts to Karbon',
+          'kaat': 'Connect Accounts to Karbon',
+          'infinity_trading': 'Connect Accounts to Karbon',
           'DX_Dashboard': 'KarbonDX Dashboard',
           'DX_Config': 'Configuration',
           'MM_Config': 'Advance Money Management',
           'MM_Auto': 'Auto Trading',
           'MM_Errors': 'Common Errors',
+          'Demo_funding': 'Demo Trading',
+          'wallet_system': 'Wallet System',
+          'wallet_page': 'Wallet System',
+          'swap_feature': 'Wallet System',
+          'withdrawals_trading': 'Wallet System',
+          'holding_wallet': 'Wallet System',
+          'staking_wallet': 'Wallet System',
+          'what_is_staking': 'Wallet System',
+          'how_staking_works': 'Wallet System',
+          'how_to_stake': 'Wallet System',
+          'unstaking_kbn': 'Wallet System',
+          'withdraw_rewards': 'Wallet System',
           'Demo_Trading': 'Demo Trading',
           'DT_What_Is': 'Demo Trading',
           'DT_Why': 'Demo Trading',
