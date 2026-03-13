@@ -942,7 +942,7 @@
         </ul>
         <p>Each model provides a different level of control and automation.</p>
 
-        <h4 id="kaat">KAAT – Karbon AI Automated Trading</h4>
+        <h4 id="kaat">KAAT – Karbon Assisted Auto Trading</h4>
         <p>KAAT accounts are designed for users who want greater control over their trading strategies while still benefiting from Karbon’s automation tools.</p>
         <p>This model supports manual-assisted trading, where users can configure strategies and integrate external algorithmic signals.</p>
         
@@ -2470,8 +2470,9 @@
         if (target) {
           const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
           const searchSectionHeight = document.querySelector('.search-section')?.offsetHeight || 0;
+          const targetPosition = target.getBoundingClientRect().top + window.scrollY;
           window.scrollTo({
-            top: target.offsetTop - headerHeight - searchSectionHeight - 20,
+            top: targetPosition - headerHeight - searchSectionHeight - 20,
             behavior: 'smooth'
           });
           searchResults.classList.remove('show');
